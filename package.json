@@ -1,0 +1,11 @@
+{
+  "name": "both-projects",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently --kill-others-on-fail \"cd frontend && npm run dev\" \"cd api && npm start\""
+  },
+  "private": true
+}

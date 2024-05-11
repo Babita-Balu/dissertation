@@ -1,0 +1,17 @@
+{
+  "name": "htmltoampconverter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "nodemon": "^2.0.6",
+    "puppeteer": "^5.5.0"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "amp-email-template-generator",
+  "version": "2.11.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "lodash": "^4.17.20",
+    "uuid": "^8.2.0"
+  },
+  "scripts": {
+    "fix": "eslint lib --fix",
+    "lint": "eslint lib",
+    "test": "nyc --reporter=html mocha 'lib/**/*.test.js'",
+    "test-stage": "cross-env BUY_LINK=https://stage.skipify.com/l API_ROOT=https://stage-api.skipify.com/v2 node test.js",
+    "test-dev": "cross-env BUY_LINK=https://dev.skipify.com/l API_ROOT=https://dev-api.skipify.com/v2 node test.js",
+    "test-prod": "cross-env BUY_LINK=https://www.skipify.com/l API_ROOT=https://api.skipify.com/v2 node test.js"
+  },
+  "devDependencies": {
+    "amphtml-validator": "^1.0.34",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.21.0",
+    "mocha": "^8.3.2",
+    "nyc": "^15.1.0"
+  }
+}

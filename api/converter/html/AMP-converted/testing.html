@@ -1,0 +1,406 @@
+<!doctype html>
+<html amp4email>
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <style amp4email-boilerplate>body {
+        visibility: hidden
+    }</style>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <style amp-custom>
+        /* RESETS */
+        p {
+            margin: 0px;
+            margin-bottom: 0px;
+            padding: 0px;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        table, td {
+            border-collapse: collapse;
+        }
+
+        * {
+            text-size-adjust: none !important;
+            -ms-text-size-adjust: none !important;
+            -webkit-text-size-adjust: none !important;
+        }
+
+        /* gmail */
+        u + #body a {
+            color: inherit;
+            text-decoration: none;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+        }
+
+        img + div {
+            display: none !important;
+        }
+
+        /* end gmail */
+        /* ios */
+        body {
+            -webkit-text-size-adjust: 100%;
+        }
+
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* end ios */
+        /* android */
+        body {
+            margin: 0 auto !important;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        u + .body .full-wrap {
+            width: 100% !important;
+            width: 100vw !important;
+        }
+
+        div[style*="margin: 14px 0;"] {
+            margin: 0 !important;
+        }
+
+        div[style*="margin: 16px 0;"] {
+            margin: 0 !important;
+        }
+
+        /* end android */
+        /* END RESETS */
+        .wrapper {
+            background-color: #f5f5f5;
+        }
+
+        .item-body {
+            margin: 0 auto;
+            max-width: 600px;
+            width: 100%;
+            background-color: #ffffff;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .checkbox {
+            display: none;
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+            background-image: url(https://storage.googleapis.com/skipify-assets/images/general/icon-add.png);
+            background-size: 0px 0px;
+            background-position: 1000px -1000px;
+        }
+
+        .container {
+            display: block;
+            position: relative;
+            font-size: 0;
+            text-align: left;
+            padding: 10px 0;
+        }
+
+        .checkmark,
+        .after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center right;
+            display: block;
+        }
+
+        .checkmark {
+            background-image: url(https://storage.googleapis.com/skipify-assets/images/general/icon-close.png);
+            background-size: 34px 34px;
+            display: none;
+        }
+
+        .after {
+            background-image: url(https://storage.googleapis.com/skipify-assets/images/general/icon-add.png);
+            background-color: rgba(255, 255, 255, 0.9);
+            background-size: 80px 34px;
+        }
+
+        .container input:checked ~ .after {
+            display: none;
+        }
+
+        .container input:checked ~ .checkmark {
+            display: block;
+        }
+
+        .item-h {
+            padding: 30px 20px 0 20px;
+        }
+
+        .item-subtitle {
+            padding: 20px;
+        }
+
+        .item-subtitle p {
+            font-size: 24px;
+            line-height: 1.5;
+            text-align: left;
+        }
+
+        .item-case {
+            padding: 0 20px;
+        }
+
+        .item-case-inside {
+            border-top: 1px solid #e2e0e0;
+        }
+
+        .item-img {
+            display: inline-block;
+            width: 40%;
+            vertical-align: middle;
+        }
+
+        .item-desc {
+            display: inline-block;
+            width: 60%;
+            vertical-align: middle;
+        }
+
+        .item-desc > span {
+            font-size: 14px;
+            line-height: 1.5;
+            display: block;
+            padding-left: 10px;
+        }
+
+        .item-desc > span.item-title {
+            font-size: 20px;
+            padding-top: 0;
+            padding-right: 44px;
+        }
+
+        .item-details {
+            padding-top: 5px;
+        }
+
+        .item-details-1, .item-details-2 {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .item-details-1 {
+            width: 50px;
+        }
+
+        .item-btn {
+            padding: 0 20px;
+        }
+
+        .item-btn-inside {
+            border-top: 1px solid #e2e0e0;
+            padding-top: 40px;
+            text-align: center;
+        }
+
+        .item-btn-inside a {
+        }
+
+        .item-f {
+            padding: 20px 0;
+            font-size: 13px;
+            line-height: 1.5;
+            text-align: left;
+            background-color: #f5f5f5;
+        }
+
+        .item-link {
+            padding: 10px 20px 30px;
+        }
+
+        .item-link p {
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <amp-img alt="" height="1" width="1"
+             src="https://devmothershipbackend.skipify.com/tracking/abandon-cart?type=abandon-cart&flowTriggerId=60de2db5c50da856a123e078&hasAmp=true&actionType=ampOpen&email=khalid+abc@skipify.com"></amp-img>
+
+    <amp-state id="cart">
+        <script type="application/json">
+            {
+                "p1": true,
+                "p2": true
+            }
+        </script>
+    </amp-state>
+    <amp-state id="tracking">
+        <script type="application/json">
+            {
+                "actionType": '',
+                "product_id": ''
+            }
+        </script>
+    </amp-state>
+    <!-- preheader -->
+    <div style="mso-element-wrap: no-wrap-beside; display: none; width: 0px; height: 0px; max-height: 0px; overflow: hidden; line-height: 0; visibility: hidden;">
+        Don't miss out on these great items!
+    </div>
+
+    <div style="display: none; width: 0px; height: 0px; max-height: 0px; overflow: hidden; line-height: 0; visibility: hidden;">
+        &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+    </div>
+
+    <!-- outer table -->
+    <div class="item-body">
+
+        <!-- logo -->
+        <div class="item-h">
+            <a href="https://www.skipify.com/">
+                <amp-img src="https://storage.googleapis.com/cdn-backend-bucket/1609431934" width="260" height="90"
+                         alt=""
+                         style="display: block; border: 0; width: 100%; max-width: 260px; min-width: 10px; height: auto;"></amp-img>
+            </a>
+        </div>
+        <!-- end logo -->
+
+        <!-- subtitle -->
+        <div class="item-subtitle">
+            <p>
+                You left something in your cart.
+            </p>
+        </div>
+        <!-- end subtitle -->
+
+        <!-- ITEM -->
+        <div class="item-case">
+            <div class="item-case-inside">
+                <label class="container">
+                    <input class="checkbox" id="p1" name="p1"
+                           on="change:AMP.setState({cart: {p1:event.checked}, tracking: {product_id: 6697369141433, actionType: 'changeSelection'}}),tracking-form.submit"
+                           type="checkbox" checked value="cart.p1"/>
+                    <span class="item-img">
+									<amp-img
+                                            src="https://ci6.googleusercontent.com/proxy/lKmI4fJddBIiRNOum47QGCrTiea_mJIhyJc1Q3ILg9_dCU2E1PLCzq-5cZDvzY-zYfYN7v8IHclCyvw6Qm9UvYsjM8vkgoilThsA-Yx4zV9MNAiug-szABsIt3DVYPtG7Lgtlz6oB3qBd-RxQIE=s0-d-e1-ft#https://cdn.shopify.com/s/files/1/0406/7793/3205/products/Max_C-Beam_Green.jpg?v=1627602779"
+                                            width="168" height="168"
+                                            style="display: block; width: 100%; height: auto;max-width:300px;"
+                                            layout="responsive"></amp-img>
+								</span>
+                    <span class="item-desc">
+									<span class="item-title">Max C-Beam Green</span>
+									<span class="item-details">
+										<span class="item-details-1">Size:</span><span
+                                            class="item-details-2">11.5</span>
+									</span>
+									<span class="item-details">
+										<span class="item-details-1">Qty:</span><span class="item-details-2">1</span>
+									</span>
+									<span class="item-details">
+										<span class="item-details-1">Total:</span><span
+                                            class="item-details-2">$50</span>
+									</span>
+								</span>
+                    <span class="checkmark"></span>
+                    <span class="after"></span>
+                </label>
+            </div>
+        </div>
+        <!-- END ITEM -->
+
+
+        <!-- BUTTON -->
+        <div class="item-btn">
+            <div class="item-btn-inside">
+                <div data-amp-bind-class='((cart.p1 != true && cart.p2 != true) ? "show":"hide")' class="hide"
+                     style="opacity: 0.5">
+                    <amp-img alt="" width="300" height="65" src="https://cdn.skipify.com/assets/btn-black.jpg"
+                             width="300"/>
+                </div>
+
+
+                <a href="https://dev.skipify.com/r?data=%7B%22url%22:%22anas-skipify.myshopify.com%22,%22items%22:%5B%7B%22quantity%22:1,%22variant_id%22:39953841553594,%22final_price%22:%2250.00%22%7D%5D,%22flowTriggerId%22:%2260de2db5c50da856a123e078%22,%22sequenceId%22:%22610b0fdeacb0fd79ee762a2a%22,%22email%22:%22khalid+abc@skipify.com%22,%22boughtAll%22:false%7D"
+                   class="hide" data-amp-bind-class='((cart.p1 != true && cart.p2 == true) ? "show":"hide")'>
+                    <amp-img src="https://cdn.skipify.com/assets/btn-black.jpg" alt="" width="300" height="65"/>
+                </a>
+
+                <a href="https://dev.skipify.com/r?data=%7B%22url%22:%22anas-skipify.myshopify.com%22,%22items%22:%5B%7B%22quantity%22:1,%22variant_id%22:39953841553593,%22final_price%22:%2250.00%22%7D,%7B%22quantity%22:1,%22variant_id%22:39953841553594,%22final_price%22:%2250.00%22%7D%5D,%22flowTriggerId%22:%2260de2db5c50da856a123e078%22,%22sequenceId%22:%22610b0fdeacb0fd79ee762a2a%22,%22email%22:%22khalid+abc@skipify.com%22,%22boughtAll%22:true%7D"
+                   class="show" data-amp-bind-class='((cart.p1 == true && cart.p2 == true) ? "show":"hide")'>
+                    <amp-img src="https://cdn.skipify.com/assets/btn-black.jpg" alt="" width="300" height="65"/>
+                </a>
+
+                <a href="https://dev.skipify.com/r?data=%7B%22url%22:%22anas-skipify.myshopify.com%22,%22items%22:%5B%7B%22quantity%22:1,%22variant_id%22:39953841553593,%22final_price%22:%2250.00%22%7D%5D,%22flowTriggerId%22:%2260de2db5c50da856a123e078%22,%22sequenceId%22:%22610b0fdeacb0fd79ee762a2a%22,%22email%22:%22khalid+abc@skipify.com%22,%22boughtAll%22:false%7D"
+                   class="hide" data-amp-bind-class='((cart.p1 == true && cart.p2 != true) ? "show":"hide")'>
+                    <amp-img src="https://cdn.skipify.com/assets/btn-black.jpg" alt="" width="300" height="65"/>
+                </a>
+            </div>
+        </div>
+        <!-- END BUTTON -->
+
+        <!-- TEXT -->
+        <div class="item-link">
+            <p>
+                or <a href="https://anas-skipify.myshopify.com"
+                      style="color: #f49ac1; text-decoration: underline;"><strong>Visit our store</strong></a>.
+            </p>
+        </div>
+        <!-- END TEXT -->
+
+
+        <!-- END inner table -->
+
+        <!-- footer -->
+        <div class="item-f">
+            <p>
+                Don't want to receive cart reminders from us?
+                <a href="https://devmothershipbackend.skipify.com/opt-out/60cccf4a0f91ab0027fe2221?email=ali@skipify.com"
+                   style="color: #000000; text-decoration: underline;">Unsubscribe</a>
+            </p>
+        </div>
+        <!-- END footer -->
+
+        <div>
+            <!-- END outer table -->
+
+            <!--     START OF SKIPIFY TRACKING FORM-->
+            <div class="hide">
+                <form method="post" id="tracking-form"
+                      action-xhr="https://devmothershipbackend.skipify.com/tracking/ac-click"
+                      on="submit-success: AMP.setState({
+                        res: event.response
+                    })"
+                >
+                    <input hidden name="type" value="abandon-cart"/>
+                    <input hidden name="hasAmp" value="true"/>
+                    <input hidden name="email" value="khalid+abc@skipify.com"/>
+                    <input hidden name="flowTriggerId" value="60de2db5c50da856a123e078"/>
+                    <input hidden name="actionType" data-amp-bind-value="tracking.actionType"/>
+                </form>
+            </div>
+            <!--      END OF SKIPIFY TRACKING FORM-->
+        </div>
+</body>
+</html>

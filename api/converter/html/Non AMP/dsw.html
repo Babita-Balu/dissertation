@@ -1,0 +1,830 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="x-apple-disable-message-reformatting"/>
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!--<![endif]-->
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <style type="text/css">
+        p {
+            margin: 0px;
+            margin-bottom: 0px;
+            padding: 0px;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        table, td {
+            border-collapse: collapse;
+        }
+
+        * {
+            text-size-adjust: none !important;
+            -ms-text-size-adjust: none !important;
+            -webkit-text-size-adjust: none !important;
+        }
+
+        /* outlook / hotmail */
+        .ExternalClass {
+            width: 100%;
+        }
+
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        .ReadMsgBody {
+            width: 100%;
+        }
+
+        /* end outlook / hotmail */
+        /* gmail */
+        u + #body a {
+            color: inherit;
+            text-decoration: none;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+        }
+
+        img + div {
+            display: none !important;
+        }
+
+        /* end gmail */
+        /* ios */
+        body {
+            -webkit-text-size-adjust: 100%;
+        }
+
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* end ios */
+        /* windows mobile */
+        body {
+            -ms-text-size-adjust: 100%;
+        }
+
+        /* end windows mobile */
+        /* android */
+        body {
+            margin: 0 auto !important;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        u + .body .full-wrap {
+            width: 100% !important;
+            width: 100vw !important;
+        }
+
+        div[style*="margin: 14px 0;"] {
+            margin: 0 !important;
+        }
+
+        div[style*="margin: 16px 0;"] {
+            margin: 0 !important;
+        }
+
+        /* end android */
+
+        /* interactive */
+
+        input {
+            display: none;
+        }
+
+        label {
+            cursor: pointer;
+            display: block;
+        }
+
+        /* open/close */
+        .hamburger-select {
+            font-weight: bold;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        .hamburger-arrow {
+            padding: 10px;
+        }
+
+        .hamburger-close {
+            padding: 10px;
+            display: none;
+            background-color: #f5f5f5;
+        }
+
+        /* options */
+        .menu-spacer {
+            height: 60px;
+        }
+
+        .menu-options {
+            display: block;
+            background-color: #d73d40;
+        }
+
+
+        /* sizes */
+        .size-options {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .sizes {
+            display: inline-block;
+        }
+
+        .sizes label {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .sizes label.stable {
+
+            background-color: #f5f5f5;
+            color: #111111;
+            display: block;
+        }
+
+        .sizes label.hit {
+            background-color: #111111;
+            color: #ffffff;
+            display: none;
+        }
+
+        .btn-options {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 40px;
+        }
+
+        .btn {
+            padding: 10px 25px;
+            display: inline-block;
+            background-color: #111111;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Helvetica, Arial, sans-serif;
+            border: 1px solid #111111;
+        }
+
+        .btn.skipify {
+            padding: 10px 25px 10px 60px;
+
+            background-image: url('https://storage.googleapis.com/skipify-assets/images/check_logo.png');
+            background-repeat: no-repeat;
+            background-size: 25px;
+            background-position: 20px 45%;
+            line-height: 30px;
+        }
+
+        .btn-dead {
+            padding: 10px 25px;
+            display: inline-block;
+            background-color: #e7e6e6;
+            color: #f5f5f5;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Helvetica, Arial, sans-serif;
+            border: 1px solid #e7e6e6;
+            cursor: default;
+        }
+
+        .btn-size-8,
+        .btn-size-9,
+        .btn-size-10,
+        .btn-size-11,
+        .btn-size-12,
+        .btn-size-13 {
+            display: none;
+        }
+
+        .size-8-stable-select:checked ~ .menu-options .size-option-8 {
+            display: block;
+        }
+
+        .size-8-stable-select:checked ~ .menu-options .size-option-8-stable {
+            display: none;
+        }
+
+        .size-8-stable-select:checked ~ .menu-options .btn-size-8 {
+            display: block;
+        }
+
+        .size-8-stable-select:checked ~ .menu-options .btn-dead {
+            display: none;
+        }
+
+        .size-9-stable-select:checked ~ .menu-options .size-option-9 {
+            display: block;
+        }
+
+        .size-9-stable-select:checked ~ .menu-options .size-option-9-stable {
+            display: none;
+        }
+
+        .size-9-stable-select:checked ~ .menu-options .btn-size-9 {
+            display: block;
+        }
+
+        .size-9-stable-select:checked ~ .menu-options .btn-dead {
+            display: none;
+        }
+
+        .size-10-stable-select:checked ~ .menu-options .size-option-10 {
+            display: block;
+        }
+
+        .size-10-stable-select:checked ~ .menu-options .size-option-10-stable {
+            display: none;
+        }
+
+        .size-10-stable-select:checked ~ .menu-options .btn-size-10 {
+            display: block;
+        }
+
+        .size-10-stable-select:checked ~ .menu-options .btn-dead {
+            display: none;
+        }
+
+        .size-11-stable-select:checked ~ .menu-options .size-option-11 {
+            display: block;
+        }
+
+        .size-11-stable-select:checked ~ .menu-options .size-option-11-stable {
+            display: none;
+        }
+
+        .size-11-stable-select:checked ~ .menu-options .btn-size-11 {
+            display: block;
+        }
+
+        .size-11-stable-select:checked ~ .menu-options .btn-dead {
+            display: none;
+        }
+
+        .size-12-stable-select:checked ~ .menu-options .size-option-12 {
+            display: block;
+        }
+
+        .size-12-stable-select:checked ~ .menu-options .size-option-12-stable {
+            display: none;
+        }
+
+        .size-12-stable-select:checked ~ .menu-options .btn-size-12 {
+            display: block;
+        }
+
+        .size-12-stable-select:checked ~ .menu-options .btn-dead {
+            display: none;
+        }
+
+        .size-13-stable-select:checked ~ .menu-options .size-option-13 {
+            display: block;
+        }
+
+        .size-13-stable-select:checked ~ .menu-options .size-option-13-stable {
+            display: none;
+        }
+
+        .size-13-stable-select:checked ~ .menu-options .btn-size-13 {
+            display: block;
+        }
+
+        .size-13-stable-select:checked ~ .menu-options .btn-dead {
+            display: none;
+        }
+
+        .size-8-select:checked ~ .menu-options .size-option-8-stable {
+            display: block;
+        }
+
+        .size-8-select:checked ~ .menu-options .size-option-8 {
+            display: none;
+        }
+
+        .size-9-select:checked ~ .menu-options .size-option-9-stable {
+            display: block;
+        }
+
+        .size-9-select:checked ~ .menu-options .size-option-9 {
+            display: none;
+        }
+
+        .size-10-select:checked ~ .menu-options .size-option-10-stable {
+            display: block;
+        }
+
+        .size-10-select:checked ~ .menu-options .size-option-10 {
+            display: none;
+        }
+
+        .size-11-select:checked ~ .menu-options .size-option-11-stable {
+            display: block;
+        }
+
+        .size-11-select:checked ~ .menu-options .size-option-11 {
+            display: none;
+        }
+
+        .size-12-select:checked ~ .menu-options .size-option-12-stable {
+            display: block;
+        }
+
+        .size-12-select:checked ~ .menu-options .size-option-12 {
+            display: none;
+        }
+
+        .size-13-select:checked ~ .menu-options .size-option-13-stable {
+            display: block;
+        }
+
+        .size-13-select:checked ~ .menu-options .size-option-13 {
+            display: none;
+        }
+
+        .interactive {
+            display: none;
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+            .fallback {
+                display: none;
+                display: none !important;
+                max-height: 0;
+                overflow: hidden;
+            }
+
+            .interactive {
+                display: block !important;
+                max-height: none !important;
+            }
+        }
+
+        /* end interactive */
+
+        @media only screen and (max-width: 600px) {
+            .stretchy {
+                width: 100%;
+                display: block;
+                max-width: 100% !important;
+            }
+
+            .sm-hide {
+                display: none !important;
+            }
+
+            .padding-right-mob-5 {
+                padding-right: 5px !important;
+            }
+
+            .padding-right-mob-10 {
+                padding-right: 10px !important;
+            }
+
+            .padding-right-mob-20 {
+                padding-right: 20px !important;
+            }
+
+            .padding-right-mob-30 {
+                padding-right: 30px !important;
+            }
+
+            .padding-right-mob-40 {
+                padding-right: 40px !important;
+            }
+
+            .padding-left-mob-5 {
+                padding-left: 5px !important;
+            }
+
+            .padding-left-mob-10 {
+                padding-left: 10px !important;
+            }
+
+            .padding-left-mob-20 {
+                padding-left: 20px !important;
+            }
+
+            .padding-left-mob-30 {
+                padding-left: 30px !important;
+            }
+
+            .padding-left-mob-40 {
+                padding-left: 40px !important;
+            }
+        }
+
+        @media screen yahoo {
+            * {
+                overflow: visible !important;
+            }
+
+            .y-overflow-hidden {
+                overflow: hidden !important;
+            }
+        }
+
+    </style>
+    <!--[if (gte mso 9)|(IE)]>
+    <style>
+        * {
+            font-family: sans-serif !important;
+        }
+
+        p {
+            font-family: sans-serif !important;
+        }
+
+        a {
+            font-family: sans-serif !important;
+        }
+
+        span {
+            font-family: sans-serif !important;
+        }
+
+        table {
+            border-collapse: collapse !important
+        }
+    </style>
+    <![endif]-->
+    <!--[if (gte mso 9)>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG></o:AllowPNG>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+</head>
+
+<body style="margin-top:0px !important;margin-right:0px !important;margin-bottom:0px !important;margin-left:0px !important;background-color:#ffffff;">
+
+<!-- preheader -->
+<div style="mso-element-wrap:no-wrap-beside;line-height:0;visibility:hidden;overflow:hidden;display:none;">Nike
+    Revolution 5 Ext is in stock!
+</div>
+
+<div style="display:none;width:0px;height:0px;max-height:0px;overflow:hidden;line-height:0;visibility:hidden;">
+    &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+</div>
+<!-- end preheader -->
+
+<!-- outer table -->
+<table border="0" align="center" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+    <tbody>
+    <tr>
+        <td bgcolor="#ffffff"
+            style="background-color:#ffffff;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+
+            <div style="max-width:600px;margin:0 auto;">
+
+                <!--[if (gte mso 9)|(IE)]>
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                    <tr>
+                        <td>
+                <![endif]-->
+
+                <!-- inner table -->
+                <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:600px;">
+                    <tbody>
+                    <tr>
+                        <td align="center" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+
+
+                            <!-- content -->
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center"
+                                   bgcolor="#ffffff">
+                                <tr>
+                                    <td align="center"
+                                        style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+
+                                        <!-- IMAGE -->
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+                                            <tbody>
+                                            <tr>
+                                                <td align="center" class="">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                                           align="center">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td align="center"
+                                                                style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+                                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                                       align="center">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+                                                                            <img src="https://storage.googleapis.com/skipify-assets/images/dsw/dsw.png"
+                                                                                 width="100%" height="567" border="0"
+                                                                                 style="display:block;border:0;width:100%;max-width:600px;min-width:10px;height:auto;"/>
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- END IMAGE -->
+
+
+                                        <!-- PRICE -->
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+                                            <tbody>
+                                            <tr>
+                                                <td align="center"
+                                                    style="padding-top:20px;padding-left:40px;padding-right:40px;padding-bottom:0;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                                           align="center">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td align="center"
+                                                                style="padding-top:0;padding-left:0;padding-right:0;padding-bottom:0;">
+                                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                                       align="center">
+                                                                    <tr>
+                                                                        <td valign="top">
+                                                                            <!-- TEXT -->
+                                                                            <table width="100%" border="0"
+                                                                                   cellspacing="0" cellpadding="0"
+                                                                                   align="center">
+                                                                                <tbody>
+                                                                                <tr>
+                                                                                    <td align="left" class=""
+                                                                                        style="border-right:1px solid #111111;padding-top:0;padding-left:0;padding-right:10px;padding-bottom:0;">
+                                                                                        <p style="text-align:left;text-transform:none;color:#111111;font-weight:bold;font-family:Helvetica, Arial, sans-serif;font-size:28px;line-height:48px;Margin-top:0px;Margin-bottom:0px;">
+                                                                                            $64.99
+                                                                                        </p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <!-- END TEXT -->
+                                                                        </td>
+                                                                        <td valign="top" style="padding-left:10px;">
+                                                                            <!-- TEXT -->
+                                                                            <table width="100%" border="0"
+                                                                                   cellspacing="0" cellpadding="0"
+                                                                                   align="center">
+                                                                                <tbody>
+                                                                                <tr>
+                                                                                    <td align="left" class=""
+                                                                                        style="padding-top:4px;padding-left:0;padding-right:0;padding-bottom:0;">
+                                                                                        <p style="text-align:left;text-transform:none;color:#666666;font-family:Helvetica, Arial, sans-serif;font-size:14px;line-height:38px;Margin-top:0px;Margin-bottom:0px;">
+                                                                                            Limited Inventory
+                                                                                        </p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <!-- END TEXT -->
+
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- END PRICE -->
+
+                                        <!-- FALLBACK -->
+                                        <div class="fallback">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                                   align="center">
+                                                <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="btn-options">
+                                                            <div>
+                                                                <a target="_blank"
+                                                                   href="https://www.dsw.com/en/us/product/nike-revolution-5-ext-running-shoe---mens/494966?activeColor=001"
+                                                                   class="btn">SHOP NOW</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- END FALLBACK -->
+
+                                        <!-- SELECT -->
+                                        <div class="interactive">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                                   align="center">
+                                                <tbody>
+                                                <tr>
+                                                    <td align="center" class=""
+                                                        style="padding-top:20px;padding-right:0;padding-bottom:0;padding-left:0;">
+
+                                                        <div class="item-select">
+
+                                                            <!-- hide/show menu -->
+                                                            <input type="radio" name="hamburger-click"
+                                                                   id="options-close" class="options-close-select"
+                                                                   style="display:none;" checked/>
+                                                            <input type="radio" name="hamburger-click" id="options-open"
+                                                                   class="options-open-select" style="display:none;"/>
+
+                                                            <!-- sizes -->
+                                                            <input type="radio" name="size-select" id="size-8-stable"
+                                                                   class="size-8-stable-select" checked
+                                                                   style="display:none;"/>
+                                                            <input type="radio" name="size-select" id="size-9-stable"
+                                                                   class="size-9-stable-select" style="display:none;"/>
+                                                            <input type="radio" name="size-select" id="size-10-stable"
+                                                                   class="size-10-stable-select" style="display:none;"/>
+                                                            <input type="radio" name="size-select" id="size-11-stable"
+                                                                   class="size-11-stable-select" style="display:none;"/>
+                                                            <input type="radio" name="size-select" id="size-12-stable"
+                                                                   class="size-12-stable-select" style="display:none;"/>
+                                                            <input type="radio" name="size-select" id="size-13-stable"
+                                                                   class="size-13-stable-select" style="display:none;"/>
+                                                            <input type="radio" name="size-select" id="size-8"
+                                                                   class="size-8-select" style="display:none;"/>
+                                                            <input type="radio" name="size-select" id="size-9"
+                                                                   class="size-9-select" style="display:none;"/>
+                                                            <input type="radio" name="size-select" id="size-10"
+                                                                   class="size-10-select" style="display:none;"/>
+                                                            <input type="radio" name="size-select" id="size-11"
+                                                                   class="size-11-select" style="display:none;"/>
+                                                            <input type="radio" name="size-select" id="size-12"
+                                                                   class="size-12-select" style="display:none;"/>
+                                                            <input type="radio" name="size-select" id="size-13"
+                                                                   class="size-13-select" style="display:none;"/>
+
+
+                                                            <!-- OPTIONS -->
+
+
+                                                            <div class="menu-options">
+                                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                                       width="100%" align="center"
+                                                                       style="font-family:Helvetica, Arial, sans-serif;">
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="padding: 20px 0 10px; color:white; font-weight: bolder; font-size: 22px">
+                                                                            SELECT A SIZE
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="padding-top:40px;padding-right:35px;padding-bottom:40px;padding-left:35px;">
+                                                                            <div class="size-options">
+                                                                                <div class="sizes">
+                                                                                    <label class="stable size-option-8-stable"
+                                                                                           for="size-8-stable">8</label>
+                                                                                    <label class="hit size-option-8">8</label>
+                                                                                </div>
+                                                                                <div class="sizes">
+                                                                                    <label class="stable size-option-9-stable"
+                                                                                           for="size-9-stable">9</label>
+                                                                                    <label class="hit size-option-9">9</label>
+                                                                                </div>
+                                                                                <div class="sizes">
+                                                                                    <label class="stable size-option-10-stable"
+                                                                                           for="size-10-stable">10</label>
+                                                                                    <label class="hit size-option-10">10</label>
+                                                                                </div>
+                                                                                <div class="sizes">
+                                                                                    <label class="stable size-option-11-stable"
+                                                                                           for="size-11-stable">11</label>
+                                                                                    <label class="hit size-option-11">11</label>
+                                                                                </div>
+                                                                                <div class="sizes">
+                                                                                    <label class="stable size-option-12-stable"
+                                                                                           for="size-12-stable">12</label>
+                                                                                    <label class="hit size-option-12">12</label>
+                                                                                </div>
+                                                                                <div class="sizes">
+                                                                                    <label class="stable size-option-13-stable"
+                                                                                           for="size-13-stable">13</label>
+                                                                                    <label class="hit size-option-13">13</label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="btn-options">
+                                                                                <div class="btn-size-8">
+                                                                                    <a target="_blank"
+                                                                                       href="https://stage.skipify.com/l?variant_id=14216008&token=Hhx8yYxm_"
+                                                                                       class="btn skipify">BUY WITH
+                                                                                        1-TOUCH</a>
+                                                                                </div>
+                                                                                <div class="btn-size-9">
+                                                                                    <a target="_blank"
+                                                                                       href="https://stage.skipify.com/l?variant_id=10335353&token=Hhx8yYxm_"
+                                                                                       class="btn skipify">BUY WITH
+                                                                                        1-TOUCH</a>
+                                                                                </div>
+                                                                                <div class="btn-size-10">
+                                                                                    <a target="_blank"
+                                                                                       href="https://stage.skipify.com/l?variant_id=12998541&token=Hhx8yYxm_"
+                                                                                       class="btn skipify">BUY WITH
+                                                                                        1-TOUCH</a>
+                                                                                </div>
+                                                                                <div class="btn-size-11">
+                                                                                    <a target="_blank"
+                                                                                       href="https://stage.skipify.com/l?variant_id=18108579&token=Hhx8yYxm_"
+                                                                                       class="btn skipify">BUY WITH
+                                                                                        1-TOUCH</a>
+                                                                                </div>
+                                                                                <div class="btn-size-12">
+                                                                                    <a target="_blank"
+                                                                                       href="https://stage.skipify.com/l?variant_id=11019113&token=Hhx8yYxm_"
+                                                                                       class="btn skipify">BUY WITH
+                                                                                        1-TOUCH</a>
+                                                                                </div>
+                                                                                <div class="btn-size-13">
+                                                                                    <a target="_blank"
+                                                                                       href="https://stage.skipify.com/l?variant_id=18012321&token=Hhx8yYxm_"
+                                                                                       class="btn skipify">BUY WITH
+                                                                                        1-TOUCH</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                            <!-- END OPTIONS -->
+
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                        </div>
+                                        <!-- END SELECT -->
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- END content -->
+
+
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!-- END inner table -->
+
+                <!--[if (gte mso 9)|(IE)]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+
+            </div>
+
+        </td>
+    </tr>
+    </tbody>
+</table>
+<!-- END outer table -->
+
+</body>
+
+</html>

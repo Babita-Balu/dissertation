@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--size-->
+<div class="sk-opt1">
+    <amp-list layout="fixed-height" height="25"
+              src="https://e5b8-34-69-182-106.ngrok.io/abandoned-sequences/${seqId}/${item.product_id}/variants?type=size"
+              single-item items="." binding="no" noloading>
+        <template type="amp-mustache">
+            <select id="p${index+1}sizeID" on="change: AMP.setState({hideDefault: true, cart: {p${index+1}_size: event.value}}), skipify-cart-form.submit">
+
+                {{#size}}
+                <option value="{{.}}">SIZE: {{.}}</option>
+                {{/size}}
+
+            </select>
+        </template>
+
+    </amp-list>
+
+</div>
+
+<!--color-->
+<div class="sk-opt1">
+    <amp-list layout="fixed-height" height="25"
+              src="https://e5b8-34-69-182-106.ngrok.io/abandoned-sequences/${seqId}/${item.product_id}/variants?type=color"
+              single-item items="." binding="no" noloading>
+        <template type="amp-mustache">
+            <select id="p${index+1}colorID" on="change: AMP.setState({ hideDefault: true, cart: {p${index+1}_color: event.value}}), skipify-cart-form.submit">
+
+                {{#color}}
+                <option value="{{.}}">COLOR: {{.}}</option>
+                {{/color}}
+
+            </select>
+        </template>
+
+    </amp-list>
+
+</div>
+
+<!--material-->
+<div class="sk-opt1">
+    <amp-list layout="fixed-height" height="25"
+              src="https://e5b8-34-69-182-106.ngrok.io/abandoned-sequences/${seqId}/${item.product_id}/variants?type=material"
+              single-item items="." binding="no" noloading>
+        <template type="amp-mustache">
+            <select id="p${index+1}meterialID" on="change: AMP.setState({hideDefault: true, cart: {p${index+1}_material: event.value}}), skipify-cart-form.submit">
+
+                {{#material}}
+                <option value="{{.}}">MATERIAL: {{.}}</option>
+                {{/material}}
+
+            </select>
+        </template>
+
+    </amp-list>
+
+</div>
+</body>
+</html>

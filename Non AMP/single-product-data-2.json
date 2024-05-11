@@ -1,0 +1,127 @@
+{
+  "config": {
+    "useCarousel": true,
+    "cartLayout": "none",
+    "apiKey": "ADE228CEEA2199BBEE00BF889B8FB67A3B98841D645343939295F3E0A1895CAFFE17E8EA982ED16D8AF0E30C767617DE549A17B234268F4D566F5A9E22DDD797"
+  },
+  "website": "https://www.frette.com",
+  "campaign": {
+    "name": "le-bath-towel",
+    "headline": "",
+    "heroImage": {
+      "url": "",
+      "width": 600,
+      "height": 600
+    },
+    "description": "",
+    "queries": {}
+  },
+  "url": "https://www.frette.com/en_US/links-embroidered-bath-towel.html",
+  "vendor": {
+    "shop_name": "www.frette.com",
+    "name": "frette",
+    "termsAndConditionURL": null,
+    "enforceTerms": false,
+    "domain": "www.frette.com"
+  },
+  "products": [
+    [
+      {
+        "id": "VIR773",
+        "title": "The Starter- Mobile Detailer",
+        "queryString": "",
+        "url": "https://www.chemicalguys.com/the-starter--mobile-detailer/VIR773.html",
+        "images": [
+          {
+            "alt": "The Starter- Mobile Detailer",
+            "url": "https://www.chemicalguys.com/dw/image/v2/BCPT_PRD/on/demandware.static/-/Sites-chemicalguys-master-catalog/default/dw44896e13/hi-res/-VIR773.png?sw=800&sh=800&sm=fit",
+            "src": "https://www.chemicalguys.com/dw/image/v2/BCPT_PRD/on/demandware.static/-/Sites-chemicalguys-master-catalog/default/dw44896e13/hi-res/-VIR773.png?sw=800&sh=800&sm=fit",
+            "title": "The Starter- Mobile Detailer"
+          }
+        ],
+        "image": "https://www.chemicalguys.com/dw/image/v2/BCPT_PRD/on/demandware.static/-/Sites-chemicalguys-master-catalog/default/dw44896e13/hi-res/-VIR773.png?sw=800&sh=800&sm=fit",
+        "maxQuantity": 9,
+        "variants": [
+          {
+            "id": "HOL340",
+            "variant_id": "HOL340",
+            "option1": "ALL SEASON ARSENAL BUILDER KIT",
+            "image": "https://www.chemicalguys.com/dw/image/v2/BCPT_PRD/on/demandware.static/-/Sites-chemicalguys-master-catalog/default/dw0ed8dfb7/hi-res/-0-AllSeasonArsenalKit.png?sw=800&sh=800&sm=fit",
+            "url": "https://www.chemicalguys.com/all-season-arsenal-builder-kit/HOL340.html",
+            "original_price": 233.00,
+            "price": 104.99
+          }
+        ],
+        "swatch": {
+          "image": {
+            "src": "https://www.chemicalguys.com/dw/image/v2/BCPT_PRD/on/demandware.static/-/Sites-chemicalguys-master-catalog/default/dw0ed8dfb7/hi-res/-0-AllSeasonArsenalKit.png?sw=800&sh=800&sm=fit"
+          }
+        }
+      },
+      {
+        "id": "VIR771",
+        "title": "THE ROADAHEAD- COMPLETE DETAIL",
+        "queryString": "",
+        "url": "https://www.chemicalguys.com/the-roadahead--complete-detail/VIR771.html",
+        "images": [
+          {
+            "alt": "THE ROADAHEAD- COMPLETE DETAIL",
+            "url": "https://www.chemicalguys.com/dw/image/v2/BCPT_PRD/on/demandware.static/-/Sites-chemicalguys-master-catalog/default/dw92798495/hi-res/-VIR771.png?sw=800&sh=800&sm=fit",
+            "src": "https://www.chemicalguys.com/dw/image/v2/BCPT_PRD/on/demandware.static/-/Sites-chemicalguys-master-catalog/default/dw92798495/hi-res/-VIR771.png?sw=800&sh=800&sm=fit",
+            "title": "THE ROADAHEAD- COMPLETE DETAIL"
+          }
+        ],
+        "image": "https://www.chemicalguys.com/dw/image/v2/BCPT_PRD/on/demandware.static/-/Sites-chemicalguys-master-catalog/default/dw92798495/hi-res/-VIR771.png?sw=800&sh=800&sm=fit",
+        "maxQuantity": 9,
+        "variants": [
+          {
+            "id": "MIC881",
+            "variant_id": "MIC881",
+            "option1": "FATTY SUPER DRYER MICROFIBER DRYING TOWEL, ORANGE 25\" X 34\"",
+            "image": "https://www.chemicalguys.com/dw/image/v2/BCPT_PRD/on/demandware.static/-/Sites-chemicalguys-master-catalog/default/dw23b9a15e/hi-res/04-MIC881-%20FattySuperDryerOrangeMicrofiberTowel%2025x34-Front-Packaging.png?sw=800&sh=800&sm=fit",
+            "url": "https://www.chemicalguys.com/fatty-super-dryer-microfiber-drying-towel-orange-25-x-34/MIC881.html",
+            "original_price": 16.99,
+            "price": 9.99
+          }
+        ],
+        "swatch": {
+          "image": {
+            "src": "https://www.chemicalguys.com/dw/image/v2/BCPT_PRD/on/demandware.static/-/Sites-chemicalguys-master-catalog/default/dw142ceae5/hi-res/06-18-MIC_881_Back_Packaging.jpg?sw=270&sh=270&sm=fit"
+          }
+        }
+      },
+      {
+        "id": "VIR770",
+        "title": "THE MOBILE POLISHER - PAINT CORRECTRION & SHINE",
+        "queryString": "",
+        "url": "https://www.chemicalguys.com/the-mobile-polisher---paint-correctrion-and-shine/VIR770.html",
+        "images": [
+          {
+            "alt": "THE MOBILE POLISHER - PAINT CORRECTRION & SHINE",
+            "url": "https://www.chemicalguys.com/dw/image/v2/BCPT_PRD/on/demandware.static/-/Sites-chemicalguys-master-catalog/default/dwf360ae52/hi-res/-VIR770.png?sw=800&sh=800&sm=fit",
+            "src": "https://www.chemicalguys.com/dw/image/v2/BCPT_PRD/on/demandware.static/-/Sites-chemicalguys-master-catalog/default/dwf360ae52/hi-res/-VIR770.png?sw=800&sh=800&sm=fit",
+            "title": "THE MOBILE POLISHER - PAINT CORRECTRION & SHINE"
+          }
+        ],
+        "image": "https://www.chemicalguys.com/dw/image/v2/BCPT_PRD/on/demandware.static/-/Sites-chemicalguys-master-catalog/default/dwf360ae52/hi-res/-VIR770.png?sw=800&sh=800&sm=fit",
+        "maxQuantity": 9,
+        "variants": [
+          {
+            "id": "BUF503",
+            "variant_id": "BUF503",
+            "option1": "TORQX RANDOM ORBITAL POLISHER WITH FREE SHIPPING!",
+            "image": "https://www.chemicalguys.com/dw/image/v2/BCPT_PRD/on/demandware.static/-/Sites-chemicalguys-master-catalog/default/dwc12030e7/hi-res/BUF503.png?sw=800&sh=800&sm=fit",
+            "url": "https://www.chemicalguys.com/torqx-random-orbital-polisher/BUF503.html",
+            "original_price": 189.99,
+            "price": 129.99
+          }
+        ],
+        "swatch": {
+          "image": {
+            "src": "https://www.chemicalguys.com/dw/image/v2/BCPT_PRD/on/demandware.static/-/Sites-chemicalguys-master-catalog/default/dwc12030e7/hi-res/BUF503.png?sw=800&sh=800&sm=fit"
+          }
+        }
+      }
+    ]
+  ]
+}

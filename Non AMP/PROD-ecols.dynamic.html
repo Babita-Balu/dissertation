@@ -1,0 +1,1933 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta name="x-apple-disable-message-reformatting"/>
+    <!--[if !mso]><!-->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <!--<![endif]-->
+    <meta content="width-device-width, initial-scale=1.0" name="viewport"/>
+    <style type="text/css">
+        p {
+            margin: 0px;
+            margin-bottom: 0px;
+            padding: 0px;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        table, td {
+            border-collapse: collapse;
+        }
+
+        * {
+            text-size-adjust: none !important;
+            -ms-text-size-adjust: none !important;
+            -webkit-text-size-adjust: none !important;
+        }
+
+        /* outlook / hotmail */
+        .ExternalClass {
+            width: 100%;
+        }
+
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        .ReadMsgBody {
+            width: 100%;
+        }
+
+        /* end outlook / hotmail */
+        /* gmail */
+        u + #body a {
+            color: inherit;
+            text-decoration: none;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+        }
+
+        img + div {
+            display: none !important;
+        }
+
+        /* end gmail */
+        /* ios */
+        body {
+            -webkit-text-size-adjust: 100%;
+        }
+
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* end ios */
+        /* windows mobile */
+        body {
+            -ms-text-size-adjust: 100%;
+        }
+
+        /* end windows mobile */
+        /* android */
+        body {
+            margin: 0 auto !important;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        u + .body .full-wrap {
+            width: 100% !important;
+            width: 100vw !important;
+        }
+
+        div[style*="margin: 14px 0;"] {
+            margin: 0 !important;
+        }
+
+        div[style*="margin: 16px 0;"] {
+            margin: 0 !important;
+        }
+
+        /* end android */
+        /*rollover*/
+        .rollover:hover .rollover-main {
+            max-height: 0px !important;
+        }
+
+        .rollover .rollover-main + div {
+            display: block !important;
+        }
+
+        .rollover:hover div img {
+            max-height: none !important;
+        }
+
+        /*button start white bkg/black text*/
+        .btn:hover {
+            background-color: #333333 !important;
+            color: #ffffff !important;
+        }
+
+        /*button start black bkg/white text*/
+        .btn-trans:hover {
+            background-color: #ffffff !important;
+            color: #333333 !important;
+        }
+
+        /*button start green bkg/white text*/
+        .btn-plae:hover {
+            background-color: #ffffff !important;
+            color: #21aa50 !important;
+        }
+
+        /*end rollover*/
+
+
+        /*skipify*/
+        .btns {
+            display: inline-block;
+            cursor: pointer;
+            font-family: 'HurmeGeometricSans1-Light', Century Gothic, Helvetica, Arial, sans-serif;
+        }
+
+        input, #item-1, #item-2, #sizes-1-male, #sizes-2-male, #sizes-1-female, #sizes-2-female, .buy-btn, .pd-title {
+            display: none;
+        }
+
+        #item-1, #item-2, #sizes-1-male, #sizes-2-male, #sizes-1-female, #sizes-2-female, .buy-btn {
+            padding: 30px 10px;
+        }
+
+        .buy-btn {
+            padding: 30px 10px;
+        }
+
+        .size-btn {
+            padding: 3px;
+            margin: 5px;
+        }
+
+        #color-1:checked ~ #item-1, #color-1:checked ~ #pd-title-1 {
+            display: block;
+        }
+
+        #color-1:checked ~ #color-1-btn {
+            border: 4px solid #C79E6C;
+        }
+
+        #color-2:checked ~ #item-2, #color-2:checked ~ #pd-title-2 {
+            display: block;
+        }
+
+        #color-2:checked ~ #color-2-btn {
+            border: 4px solid #C79E6C;
+        }
+
+        .color-btn {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #C7DCDF;
+            outline: none;
+            margin: 5px;
+        }
+
+        .color-btn:hover {
+            border: 4px solid #C79E6C;
+        }
+
+        #color-1-btn {
+            background: black;
+        }
+
+        #color-2-btn {
+            background: white;
+        }
+
+        #gender-1-male:checked ~ #gender-1-male-btn {
+            background: black;
+            color: white;
+        }
+
+        #gender-1-male:checked ~ #sizes-1-male {
+            display: block;
+        }
+
+        #gender-1-female:checked ~ #gender-1-female-btn {
+            background: black;
+            color: white;
+        }
+
+        #gender-1-female:checked ~ #sizes-1-female {
+            display: block;
+        }
+
+        #gender-2-male:checked ~ #gender-2-male-btn {
+            background: black;
+            color: white;
+        }
+
+        #gender-2-male:checked ~ #sizes-2-male {
+            display: block;
+        }
+
+        #gender-2-female:checked ~ #gender-2-female-btn {
+            background: black;
+            color: white;
+        }
+
+        #gender-2-female:checked ~ #sizes-2-female {
+            display: block;
+        }
+
+        .gender-btn {
+            border-radius: 15px;
+            padding: 5px 10px;
+            background: white;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        .gender-btn:hover {
+            background: black;
+            color: white;
+        }
+
+        .size-btn {
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            background: white;
+        }
+
+        .size-btn:hover {
+            background: black;
+            color: white;
+        }
+
+        .buy-btn img {
+            width: 300px;
+        }
+
+        .pd-title {
+            padding-top: 30px;
+            text-align: center;
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: bold;
+            font-family: 'HurmeGeometricSans1-SemiBold', Century Gothic, Helvetica, Arial, sans-serif;
+        }
+
+        .price {
+            font-size: 24px;
+            line-height: 30px;
+            padding-right: 10px;
+            border-right: 1px solid #333333;
+        }
+
+        #size-1-male-s4:checked ~ #size-1-male-s4-btn,
+        #size-1-male-s45:checked ~ #size-1-male-s45-btn,
+        #size-1-male-s5:checked ~ #size-1-male-s5-btn,
+        #size-1-male-s55:checked ~ #size-1-male-s55-btn,
+        #size-1-male-s6:checked ~ #size-1-male-s6-btn,
+        #size-1-male-s65:checked ~ #size-1-male-s65-btn,
+        #size-1-male-s7:checked ~ #size-1-male-s7-btn,
+        #size-1-male-s75:checked ~ #size-1-male-s75-btn,
+        #size-1-male-s8:checked ~ #size-1-male-s8-btn,
+        #size-1-male-s85:checked ~ #size-1-male-s85-btn,
+        #size-1-male-s9:checked ~ #size-1-male-s9-btn,
+        #size-1-male-s95:checked ~ #size-1-male-s95-btn,
+        #size-1-male-s10:checked ~ #size-1-male-s10-btn,
+        #size-1-male-s105:checked ~ #size-1-male-s105-btn,
+        #size-1-male-s11:checked ~ #size-1-male-s11-btn,
+        #size-1-male-s115:checked ~ #size-1-male-s115-btn,
+        #size-1-male-s12:checked ~ #size-1-male-s12-btn,
+        #size-1-male-s13:checked ~ #size-1-male-s13-btn,
+        #size-1-male-s14:checked ~ #size-1-male-s14-btn,
+        #size-2-male-s4:checked ~ #size-2-male-s4-btn,
+        #size-2-male-s45:checked ~ #size-2-male-s45-btn,
+        #size-2-male-s5:checked ~ #size-2-male-s5-btn,
+        #size-2-male-s55:checked ~ #size-2-male-s55-btn,
+        #size-2-male-s6:checked ~ #size-2-male-s6-btn,
+        #size-2-male-s65:checked ~ #size-2-male-s65-btn,
+        #size-2-male-s7:checked ~ #size-2-male-s7-btn,
+        #size-2-male-s75:checked ~ #size-2-male-s75-btn,
+        #size-2-male-s8:checked ~ #size-2-male-s8-btn,
+        #size-2-male-s85:checked ~ #size-2-male-s85-btn,
+        #size-2-male-s9:checked ~ #size-2-male-s9-btn,
+        #size-2-male-s95:checked ~ #size-2-male-s95-btn,
+        #size-2-male-s10:checked ~ #size-2-male-s10-btn,
+        #size-2-male-s105:checked ~ #size-2-male-s105-btn,
+        #size-2-male-s11:checked ~ #size-2-male-s11-btn,
+        #size-2-male-s115:checked ~ #size-2-male-s115-btn,
+        #size-2-male-s12:checked ~ #size-2-male-s12-btn,
+        #size-2-male-s13:checked ~ #size-2-male-s13-btn,
+        #size-2-male-s14:checked ~ #size-2-male-s14-btn,
+        #size-1-female-s55:checked ~ #size-1-female-s55-btn,
+        #size-1-female-s6:checked ~ #size-1-female-s6-btn,
+        #size-1-female-s65:checked ~ #size-1-female-s65-btn,
+        #size-1-female-s7:checked ~ #size-1-female-s7-btn,
+        #size-1-female-s75:checked ~ #size-1-female-s75-btn,
+        #size-1-female-s8:checked ~ #size-1-female-s8-btn,
+        #size-1-female-s85:checked ~ #size-1-female-s85-btn,
+        #size-1-female-s9:checked ~ #size-1-female-s9-btn,
+        #size-1-female-s95:checked ~ #size-1-female-s95-btn,
+        #size-1-female-s10:checked ~ #size-1-female-s10-btn,
+        #size-1-female-s105:checked ~ #size-1-female-s105-btn,
+        #size-1-female-s11:checked ~ #size-1-female-s11-btn,
+        #size-1-female-s115:checked ~ #size-1-female-s115-btn,
+        #size-1-female-s12:checked ~ #size-1-female-s12-btn,
+        #size-1-female-s125:checked ~ #size-1-female-s125-btn,
+        #size-1-female-s13:checked ~ #size-1-female-s13-btn,
+        #size-1-female-s135:checked ~ #size-1-female-s135-btn,
+        #size-1-female-s145:checked ~ #size-1-female-s145-btn,
+        #size-1-female-s155:checked ~ #size-1-female-s155-btn,
+        #size-2-female-s55:checked ~ #size-2-female-s55-btn,
+        #size-2-female-s6:checked ~ #size-2-female-s6-btn,
+        #size-2-female-s65:checked ~ #size-2-female-s65-btn,
+        #size-2-female-s7:checked ~ #size-2-female-s7-btn,
+        #size-2-female-s75:checked ~ #size-2-female-s75-btn,
+        #size-2-female-s8:checked ~ #size-2-female-s8-btn,
+        #size-2-female-s85:checked ~ #size-2-female-s85-btn,
+        #size-2-female-s9:checked ~ #size-2-female-s9-btn,
+        #size-2-female-s95:checked ~ #size-2-female-s95-btn,
+        #size-2-female-s10:checked ~ #size-2-female-s10-btn,
+        #size-2-female-s105:checked ~ #size-2-female-s105-btn,
+        #size-2-female-s11:checked ~ #size-2-female-s11-btn,
+        #size-2-female-s115:checked ~ #size-2-female-s115-btn,
+        #size-2-female-s12:checked ~ #size-2-female-s12-btn,
+        #size-2-female-s125:checked ~ #size-2-female-s125-btn,
+        #size-2-female-s13:checked ~ #size-2-female-s13-btn,
+        #size-2-female-s135:checked ~ #size-2-female-s135-btn,
+        #size-2-female-s145:checked ~ #size-2-female-s145-btn,
+        #size-2-female-s155:checked ~ #size-2-female-s155-btn {
+            background: black;
+            color: white;
+        }
+
+        #size-1-male-s4:checked ~ #buy-item-1-male-s4,
+        #size-1-male-s45:checked ~ #buy-item-1-male-s45,
+        #size-1-male-s5:checked ~ #buy-item-1-male-s5,
+        #size-1-male-s55:checked ~ #buy-item-1-male-s55,
+        #size-1-male-s6:checked ~ #buy-item-1-male-s6,
+        #size-1-male-s65:checked ~ #buy-item-1-male-s65,
+        #size-1-male-s7:checked ~ #buy-item-1-male-s7,
+        #size-1-male-s75:checked ~ #buy-item-1-male-s75,
+        #size-1-male-s8:checked ~ #buy-item-1-male-s8,
+        #size-1-male-s85:checked ~ #buy-item-1-male-s85,
+        #size-1-male-s9:checked ~ #buy-item-1-male-s9,
+        #size-1-male-s95:checked ~ #buy-item-1-male-s95,
+        #size-1-male-s10:checked ~ #buy-item-1-male-s10,
+        #size-1-male-s105:checked ~ #buy-item-1-male-s105,
+        #size-1-male-s11:checked ~ #buy-item-1-male-s11,
+        #size-1-male-s115:checked ~ #buy-item-1-male-s115,
+        #size-1-male-s12:checked ~ #buy-item-1-male-s12,
+        #size-1-male-s13:checked ~ #buy-item-1-male-s13,
+        #size-1-male-s14:checked ~ #buy-item-1-male-s14,
+        #size-2-male-s4:checked ~ #buy-item-2-male-s4,
+        #size-2-male-s45:checked ~ #buy-item-2-male-s45,
+        #size-2-male-s5:checked ~ #buy-item-2-male-s5,
+        #size-2-male-s55:checked ~ #buy-item-2-male-s55,
+        #size-2-male-s6:checked ~ #buy-item-2-male-s6,
+        #size-2-male-s65:checked ~ #buy-item-2-male-s65,
+        #size-2-male-s7:checked ~ #buy-item-2-male-s7,
+        #size-2-male-s75:checked ~ #buy-item-2-male-s75,
+        #size-2-male-s8:checked ~ #buy-item-2-male-s8,
+        #size-2-male-s85:checked ~ #buy-item-2-male-s85,
+        #size-2-male-s9:checked ~ #buy-item-2-male-s9,
+        #size-2-male-s95:checked ~ #buy-item-2-male-s95,
+        #size-2-male-s10:checked ~ #buy-item-2-male-s10,
+        #size-2-male-s105:checked ~ #buy-item-2-male-s105,
+        #size-2-male-s11:checked ~ #buy-item-2-male-s11,
+        #size-2-male-s115:checked ~ #buy-item-2-male-s115,
+        #size-2-male-s12:checked ~ #buy-item-2-male-s12,
+        #size-2-male-s13:checked ~ #buy-item-2-male-s13,
+        #size-2-male-s14:checked ~ #buy-item-2-male-s14,
+        #size-1-female-s55:checked ~ #buy-item-1-female-s55,
+        #size-1-female-s6:checked ~ #buy-item-1-female-s6,
+        #size-1-female-s65:checked ~ #buy-item-1-female-s65,
+        #size-1-female-s7:checked ~ #buy-item-1-female-s7,
+        #size-1-female-s75:checked ~ #buy-item-1-female-s75,
+        #size-1-female-s8:checked ~ #buy-item-1-female-s8,
+        #size-1-female-s85:checked ~ #buy-item-1-female-s85,
+        #size-1-female-s9:checked ~ #buy-item-1-female-s9,
+        #size-1-female-s95:checked ~ #buy-item-1-female-s95,
+        #size-1-female-s10:checked ~ #buy-item-1-female-s10,
+        #size-1-female-s105:checked ~ #buy-item-1-female-s105,
+        #size-1-female-s11:checked ~ #buy-item-1-female-s11,
+        #size-1-female-s115:checked ~ #buy-item-1-female-s115,
+        #size-1-female-s12:checked ~ #buy-item-1-female-s12,
+        #size-1-female-s125:checked ~ #buy-item-1-female-s125,
+        #size-1-female-s13:checked ~ #buy-item-1-female-s13,
+        #size-1-female-s135:checked ~ #buy-item-1-female-s135,
+        #size-1-female-s145:checked ~ #buy-item-1-female-s145,
+        #size-1-female-s155:checked ~ #buy-item-1-female-s155,
+        #size-2-female-s55:checked ~ #buy-item-2-female-s55,
+        #size-2-female-s6:checked ~ #buy-item-2-female-s6,
+        #size-2-female-s65:checked ~ #buy-item-2-female-s65,
+        #size-2-female-s7:checked ~ #buy-item-2-female-s7,
+        #size-2-female-s75:checked ~ #buy-item-2-female-s75,
+        #size-2-female-s8:checked ~ #buy-item-2-female-s8,
+        #size-2-female-s85:checked ~ #buy-item-2-female-s85,
+        #size-2-female-s9:checked ~ #buy-item-2-female-s9,
+        #size-2-female-s95:checked ~ #buy-item-2-female-s95,
+        #size-2-female-s10:checked ~ #buy-item-2-female-s10,
+        #size-2-female-s105:checked ~ #buy-item-2-female-s105,
+        #size-2-female-s11:checked ~ #buy-item-2-female-s11,
+        #size-2-female-s115:checked ~ #buy-item-2-female-s115,
+        #size-2-female-s12:checked ~ #buy-item-2-female-s12,
+        #size-2-female-s125:checked ~ #buy-item-2-female-s125,
+        #size-2-female-s13:checked ~ #buy-item-2-female-s13,
+        #size-2-female-s135:checked ~ #buy-item-2-female-s135,
+        #size-2-female-s145:checked ~ #buy-item-2-female-s145,
+        #size-2-female-s155:checked ~ #buy-item-2-female-s155 {
+            display: block;
+        }
+
+
+        #interactive-switch:checked ~ .interactive {
+            display: block !important;
+        }
+
+        #interactive-switch:checked ~ .fallback {
+            display: none !important;
+        }
+
+
+        /*end skipify*/
+
+
+        @media only screen and (max-width: 600px) {
+            .stretchy {
+                width: 100% !important;
+                display: block !important;
+                max-width: 100% !important;
+            }
+
+            .sm-hide {
+                display: none !important;
+            }
+
+            .padding-right-mob-5 {
+                padding-right: 5px !important;
+            }
+
+            .padding-right-mob-10 {
+                padding-right: 10px !important;
+            }
+
+            .padding-right-mob-20 {
+                padding-right: 20px !important;
+            }
+
+            .padding-right-mob-30 {
+                padding-right: 30px !important;
+            }
+
+            .padding-right-mob-40 {
+                padding-right: 40px !important;
+            }
+
+            .padding-left-mob-5 {
+                padding-left: 5px !important;
+            }
+
+            .padding-left-mob-10 {
+                padding-left: 10px !important;
+            }
+
+            .padding-left-mob-20 {
+                padding-left: 20px !important;
+            }
+
+            .padding-left-mob-30 {
+                padding-left: 30px !important;
+            }
+
+            .padding-left-mob-40 {
+                padding-left: 40px !important;
+            }
+        }
+
+        @font-face {
+            font-family: 'HurmeGeometricSans1-Light';
+            src: url('https://m.plae.co/fonts/hurmegeometricsans1/33B8C0_0_0.eot');
+        url('https://m.plae.co/fonts/hurmegeometricsans1/33B8C0_0_0.woff2') format('woff2'),
+        url('https://m.plae.co/fonts/hurmegeometricsans1/33B8C0_0_0.woff') format('woff'),
+        url('https://m.plae.co/fonts/hurmegeometricsans1/33B8C0_0_0.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'HurmeGeometricSans1-Regular';
+            src: url('https://m.plae.co/fonts/hurmegeometricsans1/33B8C0_3_0.eot');
+        url('https://m.plae.co/fonts/hurmegeometricsans1/33B8C0_3_0.woff2') format('woff2'),
+        url('https://m.plae.co/fonts/hurmegeometricsans1/33B8C0_3_0.woff') format('woff'),url('https://m.plae.co/fonts/hurmegeometricsans1/33B8C0_3_0.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'HurmeGeometricSans1-SemiBold';
+            src: url('https://m.plae.co/fonts/hurmegeometricsans1/33B8C0_4_0.eot');
+        url('https://m.plae.co/fonts/hurmegeometricsans1/33B8C0_4_0.woff2') format('woff2'),
+        url('https://m.plae.co/fonts/hurmegeometricsans1/33B8C0_4_0.woff') format('woff'),
+        url('https://m.plae.co/fonts/hurmegeometricsans1/33B8C0_4_0.ttf') format('truetype');
+        }
+
+        @media screen yahoo {
+            * {
+                overflow: visible !important;
+            }
+
+            .y-overflow-hidden {
+                overflow: hidden !important;
+            }
+        }
+
+
+    </style>
+    <!--[if (gte mso 9)|(IE)]>
+    <style>
+        * {
+            font-family: sans-serif !important;
+        }
+
+        p {
+            font-family: sans-serif !important;
+        }
+
+        a {
+            font-family: sans-serif !important;
+        }
+
+        span {
+            font-family: sans-serif !important;
+        }
+
+        table {
+            border-collapse: collapse !important
+        }
+    </style>
+    <![endif]-->
+    <!--[if (gte mso 9)>
+        <xml>
+            <o:OfficeDocumentSettings>
+                <o:AllowPNG></o:AllowPNG>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+        <![endif]-->
+</head>
+<body style="margin-top:0px !important;margin-right:0px !important;margin-bottom:0px !important;margin-left:0px !important;background-color:#f1f1f2;">
+<!-- preheader -->
+<div style="mso-element-wrap:no-wrap-beside;line-height:0;visibility:hidden;overflow:hidden;display:none;">
+    Dry under any condition.
+</div>
+<div style="display:none;width:0px;height:0px;max-height:0px;overflow:hidden;line-height:0;visibility:hidden;">
+    &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+</div>
+<!-- end preheader -->
+<div style="line-height:1.5; font-family:'Google Sans', Roboto,RobotoDraft,Helvetica,Arial,sans-serif; font-size:14px; color:#5f6368; background: #f1f1f2;border-radius: 5px; padding: 14px 45px; margin: 5px 0; ">
+    <div id="sk-b-short">
+        <span style="font-weight: 700">Good news! You can now shop directly in this email. </span> <span
+            style="color:#4E97E6;cursor: pointer;font-weight: 700" tabindex="0" role="button"
+            on="tap:sk-b-short.hide,sk-b-more.show">More info</span>
+    </div>
+    <div id="sk-b-more" hidden>
+        <span style="font-weight: 700">Good news! You can now shop directly in this email. </span> See real time product
+        options and purchase right inside Gmail. Powered by Google and Gmail partner, Skipify. Try it below!
+    </div>
+</div>
+<!-- outer table -->
+<table align="center" bgcolor="#f1f1f2" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+    <tr>
+        <td bgcolor="#f1f1f2"
+            style="background-color:#f1f1f2;padding-top:20px;padding-right:0;padding-bottom:0;padding-left:0;">
+            <div style="max-width:600px;margin:0 auto;">
+                <!--[if (gte mso 9)|(IE)]>
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                    <tr>
+                        <td>
+                <![endif]-->
+                <!-- inner table -->
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#c7dcdf">
+                    <tbody>
+                    <tr>
+                        <td align="center" bgcolor="#c7dcdf"
+                            style="background-color:#c7dcdf;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+                            <!-- header -->
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tbody>
+                                <tr>
+                                    <td align="center" class="padding-right-mob-20 padding-left-mob-20"
+                                        style="padding-top:40px;padding-right:40px;padding-bottom:0;padding-left:40px;">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tbody>
+                                            <tr>
+                                                <td align="left" width="100"
+                                                    style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+                                                    <a href="https://plae.co">
+                                                        <img src="https://d3k81ch9hvuctc.cloudfront.net/company/NUkHRa/images/6807dd4f-39b1-465c-bd1a-8611d9c82c0f.png"
+                                                             width="100" height="55" border="0"
+                                                             style="display:block;border:0;max-width:100px;height:auto;"/>
+                                                    </a>
+                                                </td>
+                                                <td align="right"
+                                                    style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:10px;">
+                                                    <p style="text-align:right;text-transform:none;color:#333333;font-family:'HurmeGeometricSans1-Light', Century Gothic, Helvetica, Arial, sans-serif;font-size:16px;line-height:26px;Margin-top:0px;Margin-bottom:0px;">
+                                                        <a href="https://plae.co/collections/adult-shoes"
+                                                           style="color:#333333;text-decoration:none;">
+                                                            ADULTS
+                                                        </a>&nbsp;&nbsp;&nbsp;
+                                                        <a href="https://plae.co/collections/kids-shoes"
+                                                           style="color:#333333;text-decoration:none;">
+                                                            KIDS
+                                                        </a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- END header -->
+
+                            <!-- FULL IMAGE -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+                                <tbody>
+                                <tr>
+                                    <td align="center" class=""
+                                        style="padding-top:40px;padding-right:0;padding-bottom:0;padding-left:0;">
+                                        <a href="https://plae.co/collections/adult-shoes/style_ecols-waterproof">
+                                            <img src="https://d3k81ch9hvuctc.cloudfront.net/company/VncdyP/images/f9645d23-b98c-48d2-8994-ece3c962c46f.png"
+                                                 width="600" height="600" border="0"
+                                                 style="display:block;border:0;width:100%;max-width:600px;min-width:10px;height:auto;"/>
+                                        </a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- END FULL IMAGE -->
+
+                            <!-- TEXT -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tbody>
+                                <tr>
+                                    <td align="center" class="padding-left-mob-20 padding-right-mob-20"
+                                        style="padding-top:40px;padding-left:40px;padding-right:40px;padding-bottom:0;">
+                                        <p style="text-align:center;text-transform:none;color:#333333;font-weight:bold;font-family:'HurmeGeometricSans1-SemiBold', Century Gothic, Helvetica, Arial, sans-serif;font-size:80px;line-height:90px;Margin-top:0px;Margin-bottom:0px;">
+                                            Ecols
+                                        </p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- END TEXT -->
+
+                            <!-- TEXT -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tbody>
+                                <tr>
+                                    <td align="center" class="padding-left-mob-20 padding-right-mob-20"
+                                        style="padding-top:0;padding-left:40px;padding-right:40px;padding-bottom:0;">
+                                        <p style="text-align:center;text-transform:none;color:#333333;font-weight:bold;font-family:'HurmeGeometricSans1-SemiBold', Century Gothic, Helvetica, Arial, sans-serif;font-size:24px;line-height:34px;Margin-top:0px;Margin-bottom:0px;">
+                                            Waterproof sneakers
+                                        </p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- END TEXT -->
+
+                            <!-- IMAGE -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+                                <tbody>
+                                <tr>
+                                    <td align="center" class="padding-left-mob-20 padding-right-mob-20"
+                                        style="padding-top:40px;padding-right:40px;padding-bottom:0;padding-left:40px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+                                            <tbody>
+                                            <tr>
+                                                <td align="center"
+                                                    style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" align="center">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td align="center"
+                                                                style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+                                                                <a href="https://plae.co/collections/adult-shoes/style_ecols-waterproof">
+                                                                    <img src="https://d3k81ch9hvuctc.cloudfront.net/company/VncdyP/images/02da7d73-1979-4c82-aacb-37421c8a62b2.png"
+                                                                         width="120" height="23" border="0"
+                                                                         style="display:block;border:0;width:100%;max-width:120px;min-width:10px;height:auto;"/>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- END IMAGE -->
+
+                            <!-- TEXT -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tbody>
+                                <tr>
+                                    <td align="center" class="padding-left-mob-20 padding-right-mob-20"
+                                        style="padding-top:10px;padding-left:40px;padding-right:40px;padding-bottom:0;">
+                                        <p style="text-align:center;text-transform:none;color:#333333;font-weight:bold;font-family:'HurmeGeometricSans1-SemiBold', Century Gothic, Helvetica, Arial, sans-serif;font-size:16px;line-height:26px;Margin-top:0px;Margin-bottom:0px;">
+                                            Comfortable and really waterproof!
+                                        </p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- END TEXT -->
+
+                            <!-- TEXT -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tbody>
+                                <tr>
+                                    <td align="center" class="padding-left-mob-20 padding-right-mob-20"
+                                        style="padding-top:5px;padding-left:40px;padding-right:40px;padding-bottom:0;">
+                                        <p style="text-align:center;text-transform:none;color:#333333;font-family:'HurmeGeometricSans1-Light', Century Gothic, Helvetica, Arial, sans-serif;font-size:16px;line-height:26px;Margin-top:0px;Margin-bottom:0px;">
+                                            &quot;Tonight was the first test of these shoes in a pouring rain and I was
+                                            so impressed! I purchased them for my mile walk home from work.&quot;
+                                        </p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- END TEXT -->
+
+                            <!-- TEXT -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tbody>
+                                <tr>
+                                    <td align="center" class="padding-left-mob-20 padding-right-mob-20"
+                                        style="padding-top:5px;padding-left:40px;padding-right:40px;padding-bottom:0;">
+                                        <p style="text-align:center;text-transform:none;color:#333333;font-family:'HurmeGeometricSans1-Light', Century Gothic, Helvetica, Arial, sans-serif;font-size:16px;line-height:26px;Margin-top:0px;Margin-bottom:0px;">
+                                            - Kristen S.
+                                        </p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- END TEXT -->
+
+                            <!-- 2 COL STACK -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tbody>
+                                <tr>
+                                    <td align="center" dir="" class=""
+                                        style="text-align:center;font-size:0;padding-top:20px;padding-left:0;padding-right:0;padding-bottom:0;">
+                                        <!--[if (gte mso 9)|(IE)]>
+                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td width="340" valign="middle">
+                                        <![endif]-->
+                                        <div class="stretchy"
+                                             style="width:100%;max-width:340px;display:inline-block;vertical-align:middle;">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                <tr>
+                                                    <td class="" dir=""
+                                                        style="padding-top:40px;padding-bottom:0;padding-left:0;padding-right:0;"
+                                                        align="center">
+                                                        <a href="https://plae.co/collections/adult-shoes/style_ecols-waterproof">
+                                                            <img src="https://d3k81ch9hvuctc.cloudfront.net/company/VncdyP/images/86d1df5e-a73f-49e7-b33a-8596eb4a0910.jpeg"
+                                                                 width="340" height="300" border="0"
+                                                                 style="display:block;border:0;width:100%;max-width:340px;min-width:10px;height:auto;"/>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                        </td>
+                                        <td width="260" valign="middle">
+                                        <![endif]-->
+                                        <div class="stretchy"
+                                             style="width:100%;max-width:260px;display:inline-block;vertical-align:middle;">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                <tr>
+                                                    <td class="padding-left-mob-20 padding-right-mob-20" dir=""
+                                                        style="padding-top:40px;padding-bottom:0;padding-left:40px;padding-right:40px;"
+                                                        align="center">
+                                                        <!-- TEXT -->
+                                                        <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                                                               align="left">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td align="left" class=""
+                                                                    style="padding-top:0;padding-left:0;padding-right:0;padding-bottom:0;">
+                                                                    <p style="text-align:left;text-transform:none;color:#333333;font-weight:bold;font-family:'HurmeGeometricSans1-SemiBold', Century Gothic, Helvetica, Arial, sans-serif;font-size:20px;line-height:30px;Margin-top:0px;Margin-bottom:0px;">
+                                                                        Waterproof + breathable
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!-- END TEXT -->
+                                                        <!-- TEXT -->
+                                                        <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                                                               align="left">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td align="left" class=""
+                                                                    style="padding-top:10px;padding-left:0;padding-right:0;padding-bottom:0;">
+                                                                    <p style="text-align:left;text-transform:none;color:#333333;font-family:'HurmeGeometricSans1-Light', Century Gothic, Helvetica, Arial, sans-serif;font-size:16px;line-height:26px;Margin-top:0px;Margin-bottom:0px;">
+                                                                        Eco-minded waterproof membrane keeps feet dry,
+                                                                        is completely breathable and prevents
+                                                                        overheating.
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!-- END TEXT -->
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                        </td>
+                                        </tr>
+                                        </table>
+                                        <![endif]-->
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- END 2 COL STACK -->
+
+                            <!-- 2 COL STACK -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tbody>
+                                <tr>
+                                    <td align="center" dir="rtl" class=""
+                                        style="text-align:center;font-size:0;padding-top:20px;padding-left:0;padding-right:0;padding-bottom:0;">
+                                        <!--[if (gte mso 9)|(IE)]>
+                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td width="340" valign="middle">
+                                        <![endif]-->
+                                        <div class="stretchy"
+                                             style="width:100%;max-width:340px;display:inline-block;vertical-align:middle;">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                <tr>
+                                                    <td class="" dir="ltr"
+                                                        style="padding-top:40px;padding-bottom:0;padding-left:0;padding-right:0;"
+                                                        align="center">
+                                                        <a href="https://plae.co/collections/adult-shoes/style_ecols-waterproof">
+                                                            <img src="https://d3k81ch9hvuctc.cloudfront.net/company/VncdyP/images/76e8c85f-f447-424e-9800-81623039cac8.jpeg"
+                                                                 width="340" height="300" border="0"
+                                                                 style="display:block;border:0;width:100%;max-width:340px;min-width:10px;height:auto;"/>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                        </td>
+                                        <td width="260" valign="middle">
+                                        <![endif]-->
+                                        <div class="stretchy"
+                                             style="width:100%;max-width:260px;display:inline-block;vertical-align:middle;">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                <tr>
+                                                    <td class="padding-left-mob-20 padding-right-mob-20" dir="ltr"
+                                                        style="padding-top:40px;padding-bottom:0;padding-left:40px;padding-right:40px;"
+                                                        align="center">
+                                                        <!-- TEXT -->
+                                                        <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                                                               align="left">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td align="left" class=""
+                                                                    style="padding-top:0;padding-left:0;padding-right:0;padding-bottom:0;">
+                                                                    <p style="text-align:left;text-transform:none;color:#333333;font-weight:bold;font-family:'HurmeGeometricSans1-SemiBold', Century Gothic, Helvetica, Arial, sans-serif;font-size:20px;line-height:30px;Margin-top:0px;Margin-bottom:0px;">
+                                                                        Packable
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!-- END TEXT -->
+                                                        <!-- TEXT -->
+                                                        <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                                                               align="left">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td align="left" class=""
+                                                                    style="padding-top:10px;padding-left:0;padding-right:0;padding-bottom:0;">
+                                                                    <p style="text-align:left;text-transform:none;color:#333333;font-family:'HurmeGeometricSans1-Light', Century Gothic, Helvetica, Arial, sans-serif;font-size:16px;line-height:26px;Margin-top:0px;Margin-bottom:0px;">
+                                                                        Lightweight and collapsible to easily tag along
+                                                                        wherever you play.
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!-- END TEXT -->
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                        </td>
+                                        </tr>
+                                        </table>
+                                        <![endif]-->
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- END 2 COL STACK -->
+
+                            <!-- TEXT -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tbody>
+                                <tr>
+                                    <td align="center" class="padding-left-mob-20 padding-right-mob-20"
+                                        style="padding-top:60px;padding-left:40px;padding-right:40px;padding-bottom:0;">
+                                        <p style="text-align:center;text-transform:none;color:#333333;font-weight:bold;font-family:'HurmeGeometricSans1-SemiBold', Century Gothic, Helvetica, Arial, sans-serif;font-size:20px;line-height:30px;Margin-top:0px;Margin-bottom:0px;">
+                                            Available in 2 styles.
+                                        </p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- END TEXT -->
+
+                            <!-- IMAGE -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+                                <tbody>
+                                <tr>
+                                    <td align="center" class="padding-left-mob-20 padding-right-mob-20"
+                                        style="padding-top:20px;padding-right:40px;padding-bottom:0;padding-left:40px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+                                            <tbody>
+                                            <tr>
+                                                <td align="center"
+                                                    style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" align="center">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td align="center"
+                                                                style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+                                                                <a href="https://plae.co/collections/adult-shoes/style_ecols-waterproof">
+                                                                    <img src="https://d3k81ch9hvuctc.cloudfront.net/company/VncdyP/images/03075de3-704d-4644-9377-928a91432da5.png"
+                                                                         width="500" height="400" border="0"
+                                                                         style="display:block;border:0;width:100%;max-width:500px;min-width:10px;height:auto;"/>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- END IMAGE -->
+
+                            <!-- SELECT -->
+                            <div style="padding: 40px">
+                                <input type="radio" id="interactive-switch" name="interactive-switch" checked
+                                       style="display:none;"/>
+                                <div class="fallback" style="display: block">
+
+                                    <!-- BUTTON -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                        <tbody>
+                                        <tr>
+                                            <td align="center" class="padding-left-mob-20 padding-right-mob-20"
+                                                style="padding-top:40px;padding-left:40px;padding-right:40px;padding-bottom:60px;">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                                                       align="center">
+                                                    <tr>
+                                                        <td align="center"
+                                                            style="padding-top:0;padding-left:0;padding-right:0;padding-bottom:0;">
+                                                            <table border="0" cellspacing="0" cellpadding="0"
+                                                                   align="center">
+                                                                <tr>
+                                                                    <td align="center" bgcolor="#333333"
+                                                                        style="background-color:#333333;">
+                                                                        <a href="https://plae.co/collections/adult-shoes/style_ecols-waterproof"
+                                                                           style="font-size:16px;text-transform:uppercase;font-weight:bold;font-family:'HurmeGeometricSans1-SemiBold', Century Gothic, Helvetica, Arial, sans-serif;color:#ffffff;text-decoration:none;padding:12px 24px;border:2px solid #333333;background-color:#333333;display:block;">
+                                                                            SHOP ECOLS
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- END BUTTON -->
+                                </div>
+                                <div class="interactive" style="display: none">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+                                        <tbody>
+                                        <tr>
+                                            <td align="center" class=""
+                                                style="padding-top:20px;padding-right:0;padding-bottom:0;padding-left:0;">
+                                                <div>
+                                                    <!-- colors -->
+                                                    <input name="color-select" type="radio" id="color-1" checked/>
+                                                    <input name="color-select" type="radio" id="color-2"/>
+
+                                                    <label for="color-1" id="color-1-btn"
+                                                           class="color-btn btns"></label>
+                                                    <label for="color-2" id="color-2-btn"
+                                                           class="color-btn btns"></label>
+
+                                                    <div id="pd-title-1" class="pd-title">ECOLS WATERPROOF BLACK</div>
+                                                    <div id="pd-title-2" class="pd-title">ECOLS WATERPROOF WHITE</div>
+
+
+                                                    <div>
+                                                        <span class="price">$99</span>
+                                                        <span><img style="width: 80px"
+                                                                   src="https://d3k81ch9hvuctc.cloudfront.net/company/VncdyP/images/7d863259-1b7d-40ad-8c53-4ee5031350d0.png"></span>
+                                                        <span>232 Reviews</span>
+                                                    </div>
+
+
+                                                    <div id="item-1">
+                                                        <input name="gender-select-1" type="radio" id="gender-1-male"
+                                                               checked/>
+                                                        <input name="gender-select-1" type="radio"
+                                                               id="gender-1-female"/>
+
+                                                        <label for="gender-1-male" id="gender-1-male-btn"
+                                                               class="gender-btn btns">Men</label>
+                                                        <label for="gender-1-female" id="gender-1-female-btn"
+                                                               class="gender-btn btns">Women</label>
+
+                                                        <div id="sizes-1-male">
+                                                            <input name="size-1-male-sizes" type="radio"
+                                                                   id="size-1-male-s4" checked/>
+                                                            <input name="size-1-male-sizes" type="radio"
+                                                                   id="size-1-male-s45"/>
+                                                            <input name="size-1-male-sizes" type="radio"
+                                                                   id="size-1-male-s5"/>
+                                                            <input name="size-1-male-sizes" type="radio"
+                                                                   id="size-1-male-s55"/>
+                                                            <input name="size-1-male-sizes" type="radio"
+                                                                   id="size-1-male-s6"/>
+                                                            <input name="size-1-male-sizes" type="radio"
+                                                                   id="size-1-male-s65"/>
+                                                            <input name="size-1-male-sizes" type="radio"
+                                                                   id="size-1-male-s7"/>
+                                                            <input name="size-1-male-sizes" type="radio"
+                                                                   id="size-1-male-s75"/>
+                                                            <input name="size-1-male-sizes" type="radio"
+                                                                   id="size-1-male-s8"/>
+                                                            <input name="size-1-male-sizes" type="radio"
+                                                                   id="size-1-male-s85"/>
+                                                            <input name="size-1-male-sizes" type="radio"
+                                                                   id="size-1-male-s9"/>
+                                                            <input name="size-1-male-sizes" type="radio"
+                                                                   id="size-1-male-s95"/>
+                                                            <input name="size-1-male-sizes" type="radio"
+                                                                   id="size-1-male-s10"/>
+                                                            <input name="size-1-male-sizes" type="radio"
+                                                                   id="size-1-male-s105"/>
+                                                            <input name="size-1-male-sizes" type="radio"
+                                                                   id="size-1-male-s11"/>
+                                                            <input name="size-1-male-sizes" type="radio"
+                                                                   id="size-1-male-s115"/>
+                                                            <input name="size-1-male-sizes" type="radio"
+                                                                   id="size-1-male-s12"/>
+                                                            <input name="size-1-male-sizes" type="radio"
+                                                                   id="size-1-male-s13"/>
+                                                            <input name="size-1-male-sizes" type="radio"
+                                                                   id="size-1-male-s14"/>
+
+                                                            <label for="size-1-male-s4" id="size-1-male-s4-btn"
+                                                                   class="btns size-btn">4</label>
+                                                            <label for="size-1-male-s45" id="size-1-male-s45-btn"
+                                                                   class="btns size-btn">4.5</label>
+                                                            <label for="size-1-male-s5" id="size-1-male-s5-btn"
+                                                                   class="btns size-btn">5</label>
+                                                            <label for="size-1-male-s55" id="size-1-male-s55-btn"
+                                                                   class="btns size-btn">5.5</label>
+                                                            <label for="size-1-male-s6" id="size-1-male-s6-btn"
+                                                                   class="btns size-btn">6</label>
+                                                            <label for="size-1-male-s65" id="size-1-male-s65-btn"
+                                                                   class="btns size-btn">6.5</label>
+                                                            <label for="size-1-male-s7" id="size-1-male-s7-btn"
+                                                                   class="btns size-btn">7</label>
+                                                            <label for="size-1-male-s75" id="size-1-male-s75-btn"
+                                                                   class="btns size-btn">7.5</label>
+                                                            <label for="size-1-male-s8" id="size-1-male-s8-btn"
+                                                                   class="btns size-btn">8</label>
+                                                            <label for="size-1-male-s85" id="size-1-male-s85-btn"
+                                                                   class="btns size-btn">8.5</label>
+                                                            <label for="size-1-male-s9" id="size-1-male-s9-btn"
+                                                                   class="btns size-btn">9</label>
+                                                            <label for="size-1-male-s95" id="size-1-male-s95-btn"
+                                                                   class="btns size-btn">9.5</label>
+                                                            <label for="size-1-male-s10" id="size-1-male-s10-btn"
+                                                                   class="btns size-btn">10</label>
+                                                            <label for="size-1-male-s105" id="size-1-male-s105-btn"
+                                                                   class="btns size-btn">10.5</label>
+                                                            <label for="size-1-male-s11" id="size-1-male-s11-btn"
+                                                                   class="btns size-btn">11</label>
+                                                            <label for="size-1-male-s115" id="size-1-male-s115-btn"
+                                                                   class="btns size-btn">11.5</label>
+                                                            <label for="size-1-male-s12" id="size-1-male-s12-btn"
+                                                                   class="btns size-btn">12</label>
+                                                            <label for="size-1-male-s13" id="size-1-male-s13-btn"
+                                                                   class="btns size-btn">13</label>
+                                                            <label for="size-1-male-s14" id="size-1-male-s14-btn"
+                                                                   class="btns size-btn">14</label>
+
+
+                                                            <div id="buy-item-1-male-s4" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774448277&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-male-s45" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774481045&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-male-s5" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774513813&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-male-s55" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774546581&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-male-s6" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774579349&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-male-s65" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774612117&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-male-s7" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774644885&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-male-s75" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774677653&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-male-s8" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774710421&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-male-s85" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774743189&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-male-s9" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774775957&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-male-s95" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774808725&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-male-s10" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774841493&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-male-s105" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774874261&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-male-s11" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774907029&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-male-s115" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774939797&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-male-s12" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774972565&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-male-s13" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222775005333&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-male-s14" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222775038101&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+
+                                                        </div>
+                                                        <div id="sizes-1-female">
+                                                            <input name="size-1-female-sizes" type="radio"
+                                                                   id="size-1-female-s55" checked/>
+                                                            <input name="size-1-female-sizes" type="radio"
+                                                                   id="size-1-female-s6"/>
+                                                            <input name="size-1-female-sizes" type="radio"
+                                                                   id="size-1-female-s65"/>
+                                                            <input name="size-1-female-sizes" type="radio"
+                                                                   id="size-1-female-s7"/>
+                                                            <input name="size-1-female-sizes" type="radio"
+                                                                   id="size-1-female-s75"/>
+                                                            <input name="size-1-female-sizes" type="radio"
+                                                                   id="size-1-female-s8"/>
+                                                            <input name="size-1-female-sizes" type="radio"
+                                                                   id="size-1-female-s85"/>
+                                                            <input name="size-1-female-sizes" type="radio"
+                                                                   id="size-1-female-s9"/>
+                                                            <input name="size-1-female-sizes" type="radio"
+                                                                   id="size-1-female-s95"/>
+                                                            <input name="size-1-female-sizes" type="radio"
+                                                                   id="size-1-female-s10"/>
+                                                            <input name="size-1-female-sizes" type="radio"
+                                                                   id="size-1-female-s105"/>
+                                                            <input name="size-1-female-sizes" type="radio"
+                                                                   id="size-1-female-s11"/>
+                                                            <input name="size-1-female-sizes" type="radio"
+                                                                   id="size-1-female-s115"/>
+                                                            <input name="size-1-female-sizes" type="radio"
+                                                                   id="size-1-female-s12"/>
+                                                            <input name="size-1-female-sizes" type="radio"
+                                                                   id="size-1-female-s125"/>
+                                                            <input name="size-1-female-sizes" type="radio"
+                                                                   id="size-1-female-s13"/>
+                                                            <input name="size-1-female-sizes" type="radio"
+                                                                   id="size-1-female-s135"/>
+                                                            <input name="size-1-female-sizes" type="radio"
+                                                                   id="size-1-female-s145"/>
+                                                            <input name="size-1-female-sizes" type="radio"
+                                                                   id="size-1-female-s155"/>
+
+                                                            <label for="size-1-female-s55" id="size-1-female-s55-btn"
+                                                                   class="btns size-btn">5.5</label>
+                                                            <label for="size-1-female-s6" id="size-1-female-s6-btn"
+                                                                   class="btns size-btn">6</label>
+                                                            <label for="size-1-female-s65" id="size-1-female-s65-btn"
+                                                                   class="btns size-btn">6.5</label>
+                                                            <label for="size-1-female-s7" id="size-1-female-s7-btn"
+                                                                   class="btns size-btn">7</label>
+                                                            <label for="size-1-female-s75" id="size-1-female-s75-btn"
+                                                                   class="btns size-btn">7.5</label>
+                                                            <label for="size-1-female-s8" id="size-1-female-s8-btn"
+                                                                   class="btns size-btn">8</label>
+                                                            <label for="size-1-female-s85" id="size-1-female-s85-btn"
+                                                                   class="btns size-btn">8.5</label>
+                                                            <label for="size-1-female-s9" id="size-1-female-s9-btn"
+                                                                   class="btns size-btn">9</label>
+                                                            <label for="size-1-female-s95" id="size-1-female-s95-btn"
+                                                                   class="btns size-btn">9.5</label>
+                                                            <label for="size-1-female-s10" id="size-1-female-s10-btn"
+                                                                   class="btns size-btn">10</label>
+                                                            <label for="size-1-female-s105" id="size-1-female-s105-btn"
+                                                                   class="btns size-btn">10.5</label>
+                                                            <label for="size-1-female-s11" id="size-1-female-s11-btn"
+                                                                   class="btns size-btn">11</label>
+                                                            <label for="size-1-female-s115" id="size-1-female-s115-btn"
+                                                                   class="btns size-btn">11.5</label>
+                                                            <label for="size-1-female-s12" id="size-1-female-s12-btn"
+                                                                   class="btns size-btn">12</label>
+                                                            <label for="size-1-female-s125" id="size-1-female-s125-btn"
+                                                                   class="btns size-btn">12.5</label>
+                                                            <label for="size-1-female-s13" id="size-1-female-s13-btn"
+                                                                   class="btns size-btn">13</label>
+                                                            <label for="size-1-female-s135" id="size-1-female-s135-btn"
+                                                                   class="btns size-btn">13.5</label>
+                                                            <label for="size-1-female-s145" id="size-1-female-s145-btn"
+                                                                   class="btns size-btn">14.5</label>
+                                                            <label for="size-1-female-s155" id="size-1-female-s155-btn"
+                                                                   class="btns size-btn">15.5</label>
+
+                                                            <div id="buy-item-1-female-s55" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774448277&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-female-s6" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774481045&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-female-s65" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774513813&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-female-s7" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774546581&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-female-s75" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774579349&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-female-s8" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774612117&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-female-s85" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774644885&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-female-s9" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774677653&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-female-s95" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774710421&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-female-s10" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774743189&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-female-s105" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774775957&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-female-s11" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774808725&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-female-s115" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774841493&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-female-s12" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774874261&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-female-s125" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774907029&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-female-s13" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774939797&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-female-s135" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222774972565&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-female-s145" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222775005333&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-1-female-s155" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=35222775038101&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div id="item-2">
+                                                        <input name="gender-select-2" type="radio" id="gender-2-male"
+                                                               checked/>
+                                                        <input name="gender-select-2" type="radio"
+                                                               id="gender-2-female"/>
+
+                                                        <label for="gender-2-male" id="gender-2-male-btn"
+                                                               class="gender-btn btns">Men</label>
+                                                        <label for="gender-2-female" id="gender-2-female-btn"
+                                                               class="gender-btn btns">Women</label>
+                                                        <div id="sizes-2-male">
+                                                            <input name="size-2-male-sizes" type="radio"
+                                                                   id="size-2-male-s4" checked/>
+                                                            <input name="size-2-male-sizes" type="radio"
+                                                                   id="size-2-male-s45"/>
+                                                            <input name="size-2-male-sizes" type="radio"
+                                                                   id="size-2-male-s5"/>
+                                                            <input name="size-2-male-sizes" type="radio"
+                                                                   id="size-2-male-s55"/>
+                                                            <input name="size-2-male-sizes" type="radio"
+                                                                   id="size-2-male-s6"/>
+                                                            <input name="size-2-male-sizes" type="radio"
+                                                                   id="size-2-male-s65"/>
+                                                            <input name="size-2-male-sizes" type="radio"
+                                                                   id="size-2-male-s7"/>
+                                                            <input name="size-2-male-sizes" type="radio"
+                                                                   id="size-2-male-s75"/>
+                                                            <input name="size-2-male-sizes" type="radio"
+                                                                   id="size-2-male-s8"/>
+                                                            <input name="size-2-male-sizes" type="radio"
+                                                                   id="size-2-male-s85"/>
+                                                            <input name="size-2-male-sizes" type="radio"
+                                                                   id="size-2-male-s9"/>
+                                                            <input name="size-2-male-sizes" type="radio"
+                                                                   id="size-2-male-s95"/>
+                                                            <input name="size-2-male-sizes" type="radio"
+                                                                   id="size-2-male-s10"/>
+                                                            <input name="size-2-male-sizes" type="radio"
+                                                                   id="size-2-male-s105"/>
+                                                            <input name="size-2-male-sizes" type="radio"
+                                                                   id="size-2-male-s11"/>
+                                                            <input name="size-2-male-sizes" type="radio"
+                                                                   id="size-2-male-s115"/>
+                                                            <input name="size-2-male-sizes" type="radio"
+                                                                   id="size-2-male-s12"/>
+                                                            <input name="size-2-male-sizes" type="radio"
+                                                                   id="size-2-male-s13"/>
+                                                            <input name="size-2-male-sizes" type="radio"
+                                                                   id="size-2-male-s14"/>
+
+                                                            <label for="size-2-male-s4" id="size-2-male-s4-btn"
+                                                                   class="btns size-btn">4</label>
+                                                            <label for="size-2-male-s45" id="size-2-male-s45-btn"
+                                                                   class="btns size-btn">4.5</label>
+                                                            <label for="size-2-male-s5" id="size-2-male-s5-btn"
+                                                                   class="btns size-btn">5</label>
+                                                            <label for="size-2-male-s55" id="size-2-male-s55-btn"
+                                                                   class="btns size-btn">5.5</label>
+                                                            <label for="size-2-male-s6" id="size-2-male-s6-btn"
+                                                                   class="btns size-btn">6</label>
+                                                            <label for="size-2-male-s65" id="size-2-male-s65-btn"
+                                                                   class="btns size-btn">6.5</label>
+                                                            <label for="size-2-male-s7" id="size-2-male-s7-btn"
+                                                                   class="btns size-btn">7</label>
+                                                            <label for="size-2-male-s75" id="size-2-male-s75-btn"
+                                                                   class="btns size-btn">7.5</label>
+                                                            <label for="size-2-male-s8" id="size-2-male-s8-btn"
+                                                                   class="btns size-btn">8</label>
+                                                            <label for="size-2-male-s85" id="size-2-male-s85-btn"
+                                                                   class="btns size-btn">8.5</label>
+                                                            <label for="size-2-male-s9" id="size-2-male-s9-btn"
+                                                                   class="btns size-btn">9</label>
+                                                            <label for="size-2-male-s95" id="size-2-male-s95-btn"
+                                                                   class="btns size-btn">9.5</label>
+                                                            <label for="size-2-male-s10" id="size-2-male-s10-btn"
+                                                                   class="btns size-btn">10</label>
+                                                            <label for="size-2-male-s105" id="size-2-male-s105-btn"
+                                                                   class="btns size-btn">10.5</label>
+                                                            <label for="size-2-male-s11" id="size-2-male-s11-btn"
+                                                                   class="btns size-btn">11</label>
+                                                            <label for="size-2-male-s115" id="size-2-male-s115-btn"
+                                                                   class="btns size-btn">11.5</label>
+                                                            <label for="size-2-male-s12" id="size-2-male-s12-btn"
+                                                                   class="btns size-btn">12</label>
+                                                            <label for="size-2-male-s13" id="size-2-male-s13-btn"
+                                                                   class="btns size-btn">13</label>
+                                                            <label for="size-2-male-s14" id="size-2-male-s14-btn"
+                                                                   class="btns size-btn">14</label>
+
+
+                                                            <div id="buy-item-2-male-s4" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683355857045&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-male-s45" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683355889813&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-male-s5" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683355922581&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-male-s55" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683355955349&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-male-s6" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683355988117&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-male-s65" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356020885&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-male-s7" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356053653&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-male-s75" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356086421&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-male-s8" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356119189&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-male-s85" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356151957&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-male-s9" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356184725&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-male-s95" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356217493&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-male-s10" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356250261&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-male-s105" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356283029&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-male-s11" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356315797&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-male-s115" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356348565&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-male-s12" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356381333&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-male-s13" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356414101&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-male-s14" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356446869&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+
+                                                        </div>
+                                                        <div id="sizes-2-female">
+                                                            <input name="size-2-female-sizes" type="radio"
+                                                                   id="size-2-female-s55" checked/>
+                                                            <input name="size-2-female-sizes" type="radio"
+                                                                   id="size-2-female-s6"/>
+                                                            <input name="size-2-female-sizes" type="radio"
+                                                                   id="size-2-female-s65"/>
+                                                            <input name="size-2-female-sizes" type="radio"
+                                                                   id="size-2-female-s7"/>
+                                                            <input name="size-2-female-sizes" type="radio"
+                                                                   id="size-2-female-s75"/>
+                                                            <input name="size-2-female-sizes" type="radio"
+                                                                   id="size-2-female-s8"/>
+                                                            <input name="size-2-female-sizes" type="radio"
+                                                                   id="size-2-female-s85"/>
+                                                            <input name="size-2-female-sizes" type="radio"
+                                                                   id="size-2-female-s9"/>
+                                                            <input name="size-2-female-sizes" type="radio"
+                                                                   id="size-2-female-s95"/>
+                                                            <input name="size-2-female-sizes" type="radio"
+                                                                   id="size-2-female-s10"/>
+                                                            <input name="size-2-female-sizes" type="radio"
+                                                                   id="size-2-female-s105"/>
+                                                            <input name="size-2-female-sizes" type="radio"
+                                                                   id="size-2-female-s11"/>
+                                                            <input name="size-2-female-sizes" type="radio"
+                                                                   id="size-2-female-s115"/>
+                                                            <input name="size-2-female-sizes" type="radio"
+                                                                   id="size-2-female-s12"/>
+                                                            <input name="size-2-female-sizes" type="radio"
+                                                                   id="size-2-female-s125"/>
+                                                            <input name="size-2-female-sizes" type="radio"
+                                                                   id="size-2-female-s13"/>
+                                                            <input name="size-2-female-sizes" type="radio"
+                                                                   id="size-2-female-s135"/>
+                                                            <input name="size-2-female-sizes" type="radio"
+                                                                   id="size-2-female-s145"/>
+                                                            <input name="size-2-female-sizes" type="radio"
+                                                                   id="size-2-female-s155"/>
+
+                                                            <label for="size-2-female-s55" id="size-2-female-s55-btn"
+                                                                   class="btns size-btn">5.5</label>
+                                                            <label for="size-2-female-s6" id="size-2-female-s6-btn"
+                                                                   class="btns size-btn">6</label>
+                                                            <label for="size-2-female-s65" id="size-2-female-s65-btn"
+                                                                   class="btns size-btn">6.5</label>
+                                                            <label for="size-2-female-s7" id="size-2-female-s7-btn"
+                                                                   class="btns size-btn">7</label>
+                                                            <label for="size-2-female-s75" id="size-2-female-s75-btn"
+                                                                   class="btns size-btn">7.5</label>
+                                                            <label for="size-2-female-s8" id="size-2-female-s8-btn"
+                                                                   class="btns size-btn">8</label>
+                                                            <label for="size-2-female-s85" id="size-2-female-s85-btn"
+                                                                   class="btns size-btn">8.5</label>
+                                                            <label for="size-2-female-s9" id="size-2-female-s9-btn"
+                                                                   class="btns size-btn">9</label>
+                                                            <label for="size-2-female-s95" id="size-2-female-s95-btn"
+                                                                   class="btns size-btn">9.5</label>
+                                                            <label for="size-2-female-s10" id="size-2-female-s10-btn"
+                                                                   class="btns size-btn">10</label>
+                                                            <label for="size-2-female-s105" id="size-2-female-s105-btn"
+                                                                   class="btns size-btn">10.5</label>
+                                                            <label for="size-2-female-s11" id="size-2-female-s11-btn"
+                                                                   class="btns size-btn">11</label>
+                                                            <label for="size-2-female-s115" id="size-2-female-s115-btn"
+                                                                   class="btns size-btn">11.5</label>
+                                                            <label for="size-2-female-s12" id="size-2-female-s12-btn"
+                                                                   class="btns size-btn">12</label>
+                                                            <label for="size-2-female-s125" id="size-2-female-s125-btn"
+                                                                   class="btns size-btn">12.5</label>
+                                                            <label for="size-2-female-s13" id="size-2-female-s13-btn"
+                                                                   class="btns size-btn">13</label>
+                                                            <label for="size-2-female-s135" id="size-2-female-s135-btn"
+                                                                   class="btns size-btn">13.5</label>
+                                                            <label for="size-2-female-s145" id="size-2-female-s145-btn"
+                                                                   class="btns size-btn">14.5</label>
+                                                            <label for="size-2-female-s155" id="size-2-female-s155-btn"
+                                                                   class="btns size-btn">15.5</label>
+
+
+                                                            <div id="buy-item-2-female-s55" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683355857045&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-female-s6" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683355889813&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-female-s65" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683355922581&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-female-s7" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683355955349&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-female-s75" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683355988117&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-female-s8" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356020885&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-female-s85" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356053653&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-female-s9" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356086421&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-female-s95" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356119189&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-female-s10" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356151957&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-female-s105" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356184725&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-female-s11" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356217493&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-female-s115" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356250261&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-female-s12" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356283029&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-female-s125" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356315797&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-female-s13" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356348565&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-female-s135" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356381333&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-female-s145" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356414101&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+                                                            <div id="buy-item-2-female-s155" class="buy-btn btns"><a
+                                                                    href="https://www.skipify.com/l?variant_id=34683356446869&token=voVCQF4m_">
+                                                                <img src="https://storage.googleapis.com/skipify-assets/images/buy-btn.png"/>
+                                                            </a></div>
+
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div>
+                                                        <a href="https://plae.co/collections/adult-shoes/style_ecols-waterproof"
+                                                           style="font-weight:bold; color: #333333;text-decoration: underline;">More
+                                                            Details</a>
+                                                    </div>
+
+
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                            </div>
+                            <!-- END SELECT -->
+
+
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!-- end inner table -->
+
+                <!-- footer -->
+                <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+                    <tbody>
+                    <tr>
+                        <td align="center" style="padding-top:0;padding-right:0;padding-bottom:60px;padding-left:0;">
+
+                            <!-- social -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+                                <tbody>
+                                <tr>
+                                    <td align="center" class=""
+                                        style="padding-top:40px;padding-right:0;padding-bottom:0;padding-left:0;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+                                            <tbody>
+                                            <tr>
+                                                <td align="center"
+                                                    style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" align="center">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td align="center"
+                                                                style="padding-top:0;padding-right:10px;padding-bottom:0;padding-left:10px;">
+                                                                <a href="https://www.facebook.com/PLAE/">
+                                                                    <img src="https://d3k81ch9hvuctc.cloudfront.net/company/NUkHRa/images/bebc701e-3b1e-4d02-8971-2cf820ee7c69.png"
+                                                                         width="35" height="35" border="0"
+                                                                         style="display:block;border:0;max-width:35px;height:auto;"/>
+                                                                </a>
+                                                            </td>
+                                                            <td align="center"
+                                                                style="padding-top:0;padding-right:10px;padding-bottom:0;padding-left:10px;">
+                                                                <a href="https://www.instagram.com/goplae">
+                                                                    <img src="https://d3k81ch9hvuctc.cloudfront.net/company/NUkHRa/images/51935c3f-40f0-4ee4-b538-52ea04c2a511.png"
+                                                                         width="35" height="35" border="0"
+                                                                         style="display:block;border:0;max-width:35px;height:auto;"/>
+                                                                </a>
+                                                            </td>
+                                                            <td align="center"
+                                                                style="padding-top:0;padding-right:10px;padding-bottom:0;padding-left:10px;">
+                                                                <a href="https://twitter.com/goplae">
+                                                                    <img src="https://d3k81ch9hvuctc.cloudfront.net/company/NUkHRa/images/c5f84d1b-009b-43b3-bdb4-6a6fe751eca8.png"
+                                                                         width="35" height="35" border="0"
+                                                                         style="display:block;border:0;max-width:35px;height:auto;"/>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- END social -->
+
+                            <!-- TEXT -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+                                <tbody>
+                                <tr>
+                                    <td align="center" class=""
+                                        style="padding-top:30px;padding-left:20px;padding-right:20px;padding-bottom:0;">
+                                        <p style="text-align:center;text-transform:none;color:#333333;font-family:'HurmeGeometricSans1-Light', Century Gothic, Helvetica, Arial, sans-serif;font-size:13px;line-height:18px;Margin-top:0px;Margin-bottom:0px;">
+                                            Copyright &copy; {% now 'Y' %} <a href="https://plae.co"
+                                                                              style="color:#333333;text-decoration:none;">plae.co</a>.
+                                            All rights reserved.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" class=""
+                                        style="padding-top:10px;padding-left:20px;padding-right:20px;padding-bottom:0;">
+                                        <p style="text-align:center;text-transform:none;color:#333333;font-family:'HurmeGeometricSans1-Light', Century Gothic, Helvetica, Arial, sans-serif;font-size:13px;line-height:18px;Margin-top:0px;Margin-bottom:0px;">
+                                            <a href="{% unsubscribe_link %}"
+                                               style="color:#000000;text-decoration:underline;">Unsubscribe</a> from our
+                                            list.
+                                        </p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- END TEXT -->
+
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!-- END footer -->
+                <!--[if (gte mso 9)|(IE)]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<!-- END outer table -->
+</body>
+</html>

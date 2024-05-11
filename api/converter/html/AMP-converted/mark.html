@@ -1,0 +1,735 @@
+<!doctype html>
+<html ⚡4email>
+
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    <!--START OF SKIPIFY SHOPPABLE SCRIPTS -->
+    <script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js" async></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <!--END OF SKIPIFY SHOPPABLE SCRIPTS -->
+
+    <style amp4email-boilerplate>
+        body {
+            visibility: hidden
+        }
+    </style>
+    <style amp-custom>
+
+        /*START OF SKIPIFY SHOPPABLE CSS*/
+        .sk_wrapper {
+            max-width: 600px;
+            width: 100%;
+            margin: auto;
+        }
+
+        .sk-blk {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        .sk-blk :focus {
+            outline: 0;
+        }
+
+        .sk-blk a {
+            text-decoration: none;
+            color: #031e2f;
+        }
+
+        .sk-blk a:visited {
+            color: #031e2f;
+            text-decoration: none;
+        }
+
+        .sk-blk h1 {
+            font-size: 1.7rem;
+        }
+
+        .sk-blk h2 {
+            font-size: 1.5rem;
+        }
+
+        .sk-blk amp-img.contain img {
+            object-fit: contain;
+        }
+
+        .sk-blk amp-img.cover {
+            width: 100%;
+        }
+
+        .sk-blk amp-img.cover img {
+            object-fit: cover;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .jc-se {
+            justify-content: space-evenly;
+        }
+
+        .sk-opt1 {
+            min-height: 60px;
+        }
+
+        .sk-pd-compact .sk-btn {
+            font-size: 1em;
+            border-radius: 15px;
+        }
+
+        .sk-btn {
+            background: #031e2f;
+            text-transform: uppercase;
+            cursor: pointer;
+            text-align: center;
+            margin: auto;
+            max-width: 50%;
+            color: #fff;
+            display: flex;
+            border: 1px solid rgba(0, 0, 0, 0);
+            font-size: 1rem;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 2rem;
+            font-weight: 700;
+            letter-spacing: .1rem;
+            min-height: 25px;
+        }
+
+        .sk-btns .sk-btn {
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sk-btns .sk-logo {
+            background-image: url(https://storage.googleapis.com/skipify-assets/images/check_logo.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 1.5rem;
+            width: 1.5rem;
+            margin-right: 1rem;
+        }
+
+        .sk-cart-icon {
+            background-image: url(https://storage.googleapis.com/skipify-assets/images/cart.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 1.5rem;
+            width: 1.5rem;
+            margin-right: 1rem;
+        }
+
+        .sk-btn.light {
+            background: #EAEAEA;
+            border: 1px solid #656565;
+            color: #656565;
+        }
+
+        .sk-btn.rm {
+            background: #eee;
+            border: 1px solid #656565;
+            color: #656565;
+        }
+
+        .sk-btn.disabled {
+            background: #656565;
+            cursor: not-allowed;
+        }
+
+        .mb1 {
+            margin-bottom: 1rem;
+        }
+
+        .mt1 {
+            margin-top: 1rem;
+        }
+
+        .mb3 {
+            margin-bottom: 3rem;
+        }
+
+        .mt3 {
+            margin-top: 3rem;
+        }
+
+        .sk-pd {
+            padding: 0.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .sk-pd select {
+            width: 50%;
+        }
+
+        .sk-thumb {
+            position: relative;
+            width: 5rem;
+            height: 5rem;
+            flex-shrink: 0;
+        }
+
+        .sk-pd-img {
+            position: relative;
+            width: auto;
+            height: 600px;
+            flex-shrink: 0;
+        }
+
+        .sk-item {
+            justify-content: space-between;
+        }
+
+        .sk-pd-info {
+            flex: 1;
+            padding-left: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .sk-pd-info > div {
+            margin-bottom: 5px;
+        }
+
+        .sk-checkout {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .sk-checkout .sk-btn {
+            margin: auto;
+            width: 80%;
+            max-width: 80%;
+        }
+
+        .sk-remove {
+            width: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .sk-remove:hover {
+            background: #eee;
+        }
+
+        .sk-total {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            margin-right: 2rem;
+            text-align: right;
+        }
+
+        .sk-blk .cart {
+            padding: 2rem;
+        }
+
+        .sk-blk .hide {
+            display: none;
+        }
+
+        .sk-blk .show {
+            display: block;
+        }
+
+        .sk-show-flex {
+            display: flex;
+        }
+
+        .sk-show-inline {
+            display: inline;
+        }
+
+        .sk-txt1 {
+            color: #031e2f;
+            font-weight: 700;
+            font-size: 1.3rem;
+            line-height: 1;
+        }
+
+        .sk-txt2 {
+            color: #656565;
+            line-height: 1;
+            font-size: 1rem;
+        }
+
+        .sk-qty {
+            font-size: 1.5rem;
+            display: flex;
+            width: 40%;
+            justify-content: center;
+            margin: 0 auto;
+            align-items: center;
+            min-height: 50px;
+        }
+
+        .sk-qty select {
+            height: 25px;
+        }
+
+        .sk-qty-label {
+            font-size: 1rem;
+            margin-right: 1rem;
+        }
+
+        .sk-qty .sk-qty_btn {
+            cursor: pointer;
+        }
+
+        .sk-qty .sk-qty_num {
+            padding: 0 1rem;
+        }
+
+        .sk-strike {
+            text-decoration: line-through;
+        }
+
+        .sk-bold {
+            font-weight: bold;
+        }
+
+        .sk-swatch {
+            border-radius: 50%;
+            cursor: pointer;
+            overflow: hidden;
+            width: 40px;
+            height: 40px;
+            position: relative;
+            display: inline-block;
+            margin-right: 10px;
+            border: 2px solid #999999;
+        }
+
+        .sk-active {
+            border-color: #031e2f;
+        }
+
+        .color-select {
+            padding-bottom: 20px;
+            text-align: left;
+            text-align: center
+        }
+
+        .sk-pd-compact .sk-pd {
+            display: flex;
+        }
+
+        .sk-pd-compact .sk-pd-img {
+            width: 45%;
+            height: 300px;
+        }
+
+        .sk-pd-compact .sk-pd-detail {
+            width: 100%;
+            padding-top: 20px;
+        }
+
+        .sk-cart-wrapper {
+            margin-bottom: 5rem;
+            padding: 1rem;
+        }
+
+        .sk-hide-desktop {
+            display: none;
+        }
+
+        .sk-hide-mobile {
+            display: block;
+        }
+
+        .sk-hide-height {
+            height: 0;
+            overflow: hidden;
+        }
+
+        .sk-show-height {
+            height: auto;
+            overflow: auto;
+        }
+
+        .sk-opt-btn {
+            display: inline-block;
+            margin-right: 5px;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: 50ms ease-in;
+            margin-bottom: 15px;
+        }
+
+        .sk-opt-btn:hover,
+        .sk-opt-btn.sk-active {
+            border-bottom: 1px solid #aaa;
+        }
+
+        @media screen and (max-width: 600px) {
+            .sk-checkout .sk-btn {
+                width: 90%;
+                margin: auto;
+            }
+
+            .sk-btn {
+                max-width: 90%;
+                width: 70%;
+                font-size: 0.8rem;
+            }
+
+            .sk-hide-desktop {
+                display: block;
+            }
+
+            .sk-hide-mobile {
+                display: none;
+            }
+        }
+
+        /*END OF SKIPIFY SHOPPABLE CSS*/
+    </style>
+
+</head>
+
+<body>
+<div class="sk_wrapper sk-blk">
+    <!--START SKIPIFY DYNAMIC -->
+
+    <!--START OF SKIPIFY SHOPPABLE TEMPLATES-->
+    <template id="skipify-cart" type="amp-mustache">
+        <h2 style="text-align: left"> YOUR CART </h2>
+        {{#items}}
+
+        {{#items.p1}}
+        <div class="sk-item mb1 sk-show-flex">
+            <div class="sk-thumb">
+                <amp-img class="cover" layout="fill"
+                         src="https://cdn.shopify.com/s/files/1/0406/7793/3205/products/marten_black_sea.jpg?v=1591903008"></amp-img>
+            </div>
+            <div class="sk-pd-info">
+                <div class="sk-txt1" style="text-align: left">{{items.p1.title}}</div>
+                <div class="sk-txt2" style="text-align: left">{{items.p1.option1}}</div>
+                <div class="sk-txt2" style="text-align: left">&#36;{{items.p1.price}} x {{items.p1.qty}}</div>
+            </div>
+            <div class="sk-remove" on="tap:AMP.setState({
+    p1: null,
+    cart: {size: cart.size-1, p1: null}
+  }),skipify-cart-form.submit" role="button" tabindex="6">
+                X
+            </div>
+
+        </div>
+        {{/items.p1}}
+
+
+        {{/items}}
+        {{#total}}
+
+        <div class="sk-total">
+            <span class="text-3">Total: </span><span class="sk-txt2">&#36;{{total}}</span>
+        </div>
+        {{/total}}
+
+        <div class="sk-checkout">
+            <div on="tap:AMP.setState({
+    cart: {
+       visible: false
+                       }
+  })" role="button" tabindex="99" class="sk-btn mb1 light sk-hide-mobile">Add more items
+            </div>
+        </div>
+        {{#link}}
+        <div class="sk-btns sk-checkout">
+            <a href="{{link}}">
+                <div role="button" tabindex="10" class="sk-btn mb1">
+                    <div class="sk-logo"></div>
+                    Buy with 1-touch
+                </div>
+            </a>
+        </div>
+        {{/link}}
+    </template>
+    <!--END OF SKIPIFY SHOPPABLE TEMPLATES-->
+
+
+    <!--START OF SKIPIFY SHOPPABLE AMP STATES-->
+    <amp-state id="cart">
+        <script type="application/json">
+            {
+                "size": 0,
+                "total": 0,
+                "visible": false,
+                "p1_qty": 1
+            }
+        </script>
+    </amp-state>
+
+    <amp-state id="variants">
+        <script type="application/json">
+            {
+            }
+        </script>
+    </amp-state>
+    <!--END OF SKIPIFY SHOPPABLE AMP STATES-->
+
+    <!--    insert AMP HTML file in this DIV-->
+    <div [class]='(!cart.visible ? "show":"sk-hide-desktop") + " sk-blk"' class="sk-blk">
+
+        <!-- START OF PRODUCT GROUP 1 -->
+        <div class="sk_g1">
+
+            <div class="sk-pd-wrapper  sk-blk">
+                <div class="sk-pd">
+
+                    <div class="sk-pd-img">
+                        <amp-img alt="" class="contain mb1" layout="fill"
+                                 src="https://cdn.shopify.com/s/files/1/0406/7793/3205/products/marten_black_sea.jpg?v=1591903008">
+                        </amp-img>
+                    </div>
+                    <div class="sk-pd-detail">
+                        <div class="sk-txt1">Marten - Black Sea</div>
+
+                        <div
+                                [class]="(p1_candidate.id == null ||  p1_candidate.id == 34683272200341)?'show mb1 mt1':'hide mb1 mt1'"
+                                class="mb1 mt1 ">
+
+                            <span class="sk-txt2  mb1 sk-bold">$99.00</span>
+                        </div>
+
+                        <div [class]="( p1_candidate.id == 34683272265877)?'show mb1 mt1':'hide mb1 mt1'"
+                             class="mb1 mt1 hide">
+
+                            <span class="sk-txt2  mb1 sk-bold">$99.00</span>
+                        </div>
+
+                        <div [class]="( p1_candidate.id == 34683272298645)?'show mb1 mt1':'hide mb1 mt1'"
+                             class="mb1 mt1 hide">
+
+                            <span class="sk-txt2  mb1 sk-bold">$99.00</span>
+                        </div>
+
+                        <div [class]="( p1_candidate.id == 34683272331413)?'show mb1 mt1':'hide mb1 mt1'"
+                             class="mb1 mt1 hide">
+
+                            <span class="sk-txt2  mb1 sk-bold">$99.00</span>
+                        </div>
+
+                        <div [class]="( p1_candidate.id == 34683272364181)?'show mb1 mt1':'hide mb1 mt1'"
+                             class="mb1 mt1 hide">
+
+                            <span class="sk-txt2  mb1 sk-bold">$99.00</span>
+                        </div>
+
+                        <div [class]="( p1_candidate.id == 34683272396949)?'show mb1 mt1':'hide mb1 mt1'"
+                             class="mb1 mt1 hide">
+
+                            <span class="sk-txt2  mb1 sk-bold">$99.00</span>
+                        </div>
+
+                        <div [class]="( p1_candidate.id == 34683272429717)?'show mb1 mt1':'hide mb1 mt1'"
+                             class="mb1 mt1 hide">
+
+                            <span class="sk-txt2  mb1 sk-bold">$99.00</span>
+                        </div>
+
+                        <div [class]="( p1_candidate.id == 34683272462485)?'show mb1 mt1':'hide mb1 mt1'"
+                             class="mb1 mt1 hide">
+
+                            <span class="sk-txt2  mb1 sk-bold">$99.00</span>
+                        </div>
+
+                        <div [class]="( p1_candidate.id == 34683272495253)?'show mb1 mt1':'hide mb1 mt1'"
+                             class="mb1 mt1 hide">
+
+                            <span class="sk-txt2  mb1 sk-bold">$99.00</span>
+                        </div>
+
+                        <div [class]="( p1_candidate.id == 34683272528021)?'show mb1 mt1':'hide mb1 mt1'"
+                             class="mb1 mt1 hide">
+
+                            <span class="sk-txt2  mb1 sk-bold">$99.00</span>
+                        </div>
+
+                        <div [class]="( p1_candidate.id == 34683272560789)?'show mb1 mt1':'hide mb1 mt1'"
+                             class="mb1 mt1 hide">
+
+                            <span class="sk-txt2  mb1 sk-bold">$99.00</span>
+                        </div>
+
+                        <div [class]="( p1_candidate.id == 34683272593557)?'show mb1 mt1':'hide mb1 mt1'"
+                             class="mb1 mt1 hide">
+
+                            <span class="sk-txt2  mb1 sk-bold">$99.00</span>
+                        </div>
+
+                        <div [class]="( p1_candidate.id == 34683272626325)?'show mb1 mt1':'hide mb1 mt1'"
+                             class="mb1 mt1 hide">
+
+                            <span class="sk-txt2  mb1 sk-bold">$99.00</span>
+                        </div>
+
+                        <div [class]="( p1_candidate.id == 34683272659093)?'show mb1 mt1':'hide mb1 mt1'"
+                             class="mb1 mt1 hide">
+
+                            <span class="sk-txt2  mb1 sk-bold">$99.00</span>
+                        </div>
+
+                        <div [class]="( p1_candidate.id == 34683272691861)?'show mb1 mt1':'hide mb1 mt1'"
+                             class="mb1 mt1 hide">
+
+                            <span class="sk-txt2  mb1 sk-bold">$99.00</span>
+                        </div>
+
+                        <div [class]="( p1_candidate.id == 34683272724629)?'show mb1 mt1':'hide mb1 mt1'"
+                             class="mb1 mt1 hide">
+
+                            <span class="sk-txt2  mb1 sk-bold">$99.00</span>
+                        </div>
+
+                        <div [class]="( p1_candidate.id == 34683272757397)?'show mb1 mt1':'hide mb1 mt1'"
+                             class="mb1 mt1 hide">
+
+                            <span class="sk-txt2  mb1 sk-bold">$99.00</span>
+                        </div>
+
+                        <div [class]="( p1_candidate.id == 34683272822933)?'show mb1 mt1':'hide mb1 mt1'"
+                             class="mb1 mt1 hide">
+
+                            <span class="sk-txt2  mb1 sk-bold">$99.00</span>
+                        </div>
+
+
+                        <div class="sk-opt1">
+                            <amp-list width="auto" height="60" layout="fixed-height"
+                                      src="https://stage-api.skipify.com/v2/link_checkouts/campaigns/FTpUoGBmJ.json"
+                                      binding="refresh"
+                                      single-item items="." noloading>
+
+                                <template type="amp-mustache">
+
+                                    <select [disabled]="!!cart.p1" id="p1_option1" on="change: AMP.setState({
+                      p1_candidate: {id: event.value}
+                    })">
+                                        <option value="null">Select a size</option>
+                                        {{#p1}}
+                                        <option value="{{id}}">{{title}}</option>
+                                        {{/p1}}
+                                    </select>
+                                </template>
+                                <div placeholder role="listitem">
+                                    <select disabled>
+                                        <option value>Select a size</option>
+                                    </select>
+                                </div>
+
+                            </amp-list>
+                        </div>
+
+
+                        <div class="sk-qty">
+                            <div class="sk-qty-label">Quantity:</div>
+                            <button [disabled]='cart.p1_qty <= 1 || !!cart.p1' disabled class="sk-qty_btn" role="button"
+                                    tabindex="1" on="tap:AMP.setState({cart: {p1_qty: cart.p1_qty-1}})">-
+                            </button>
+                            <p [text]="cart.p1_qty" class="sk-qty_num">1</p>
+
+                            <button [disabled]='cart.p1_qty >= 10 || !!cart.p1' class="sk-qty_btn" role="button"
+                                    tabindex="1"
+                                    on="tap:AMP.setState({cart: {p1_qty: cart.p1_qty+1}})">+
+                            </button>
+
+                        </div>
+
+
+                        <div class="sk-btn rm hide" [class]='(cart.p1 ? "sk-show-flex":"hide") + " sk-btn rm"' on="tap:AMP.setState({
+      p1: null,
+      cart: {size: cart.size-cart.p1_qty, p1: null}
+    }),skipify-cart-form.submit" role="button" tabindex="1">
+                            Remove from cart
+                        </div>
+                        <div [class]='((cart.p1 == null  && p1_candidate.id != null )? "sk-show-flex":"hide") + " sk-btn"'
+                             class="sk-btn hide" on="tap:AMP.setState({
+      p1: {
+      variant_id: p1_candidate.id,
+      title: 'Marten - Black Sea',
+      option1: p1_candidate.option1,
+      price: '99',
+      },
+      cart: {
+                         size: cart.size+cart.p1_qty,
+                         p1: p1_candidate.id,
+                         }
+    }),skipify-cart-form.submit" role="button" tabindex="1">Add to cart
+                        </div>
+
+                        <div class="disabled sk-btn"
+                             [class]='((cart.p1 || p1_candidate) ? "hide":"sk-show-flex") + " disabled sk-btn"'>
+                            Add to cart
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <!-- END OF PRODUCT GROUP 1 -->
+
+    </div>
+
+    <div [class]='(!cart.visible ? "sk-hide-mobile":"hide")+ " sk-checkout sk-blk"'
+         class="sk-checkout sk-hide-mobile sk-blk">
+        <div on="tap:AMP.setState({
+        cart: {
+           visible: true
+                           }
+      }),skipify-cart-form.submit" role="button" tabindex="99" class="sk-btn hide"
+             [class]='(cart.size >= 1 ? "sk-show-flex":"hide") + " sk-btn"'>
+            <div class="sk-cart-icon"></div>
+            Checkout
+            (<span [text]="cart.size"></span>&nbsp;
+            <span [class]='(cart.size > 1 ? "sk-show-inline":"hide")'>items</span>
+            <span [class]='(cart.size <= 1 ? "sk-show-inline":"hide")'>item</span>)
+        </div>
+        <div class="sk-btn disabled" [class]='(cart.size < 1 ? "sk-show-flex":"hide") + " sk-btn disabled"'>
+            <div class="sk-cart-icon"></div>
+            Cart is empty
+        </div>
+    </div>
+
+    <!--START OF SKIPIFY SHOPPABLE FORM-->
+    <div [class]='(cart.visible ? "show":"sk-hide-desktop") + " sk-blk"' class="sk-hide-desktop sk-blk">
+        <form method="post" id="skipify-cart-form"
+              action-xhr="https://stage-api.skipify.com/v2/link_checkouts/email_form/FTpUoGBmJ" on="submit-success: AMP.setState({
+                res: event.response
+            })">
+            <input hidden name="p1" [value]="cart.p1"/>
+            <input hidden name="p1_option1" [value]="cart.p1_option1"/>
+            <input hidden type="number" name="p1_qty" [value]="cart.p1_qty"/>
+            <input hidden name="token" value="FTpUoGBmJ"/>
+            <input hidden name="purchase_link" value="https://stage.skipify.com/l"/>
+            <div class="sk-cart-wrapper" submit-success template="skipify-cart"></div>
+
+
+        </form>
+    </div>
+    <!--END OF SKIPIFY SHOPPABLE FORM-->
+
+
+    <!--END SKIPIFY DYNAMIC-->
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,704 @@
+<!doctype html>
+<html amp4email>
+<head>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <style amp4email-boilerplate>body{visibility:hidden}</style>
+  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+  <style amp-custom>
+      .text-small {
+          font-size: 8px;
+          color:#aaa;
+      }
+      a {
+          color: black;
+      }
+      h1 {
+          font-size: 25px;
+          color: #09203F;
+      }
+      .size {
+          border: 1px solid;
+          display: inline-block;
+          padding: 10px;
+          margin-right: 10px;
+          margin-top: 10px;
+      }
+      .show {
+          display: block;
+      }
+      .hide {
+          display: none;
+      }
+      .image-wrapper {
+          text-align: center;
+          padding-top: 50px;
+          padding-bottom: 50px;
+      }
+      .bold {
+          font-weight: 700;
+      }
+      .small {
+          font-size: 11px;
+          color: #999;
+      }
+      .wrapper {
+          max-width: 600px;
+          margin: auto;
+          padding-bottom: 50px;
+          padding-top: 30px;
+          padding: 20px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          font-family: "Open Sans", sans-serif;
+          background: white;
+      }
+      .fixed-container {
+          position: relative;
+          width: 100px;
+          height: 100px;
+          flex-shrink: 0;
+      }
+      amp-img.contain img {
+          object-fit: contain;
+      }
+      amp-img.cover img {
+          object-fit: cover;
+      }
+      .disabled {
+          cursor: not-allowed;
+      }
+      .active {
+          border: 2px solid #33b9ff;
+      }
+      body {
+          background: #f6f6f6;
+      }
+      .flex {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+      .line-item {
+          border: 1px solid #ccc;
+          padding: 0px 10px 0px 0;
+          margin-bottom: 10px;
+          border-radius: 5px;
+          overflow: hidden;
+      }
+      .mid {
+          padding-left: 10px;
+      }
+      .center {
+          text-align: center;
+      }
+      .btn {
+          background: black;
+          color: white;
+          padding: 10px;
+          outline: 0;
+          box-shadow: none;
+          border: 0;
+          border-radius: 5px;
+          font-size: 20px;
+          margin-top: 20px;
+          cursor: pointer;
+      }
+      .mt3 {
+          margin-top: 30px;
+      }
+      .mb5 {
+          margin-bottom: 50px;
+      }
+      button.reset {
+          border: 0;
+          padding: 0;
+          margin: 0;
+          outline: 0;
+          box-shadow: none;
+          cursor: pointer;
+      }
+      .checkbox {
+          cursor: pointer;
+          flex-shrink: 0;
+      }
+      .container {
+          display: block;
+          position: relative;
+          padding-left: 35px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          font-size: 22px;
+      }
+      .container input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+      }
+      .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 30px;
+          width: 30px;
+          background-color: #eee;
+          border: 1px solid #000;
+          border-radius: 3px;
+      }
+      .container:hover input ~ .checkmark {
+          background-color: #ccc;
+      }
+      .container input:checked ~ .checkmark {
+          background-color: #2196F3;
+      }
+      .after {
+          position: absolute;
+          display: none;
+      }
+      .container input:checked ~ .after {
+          display: block;
+      }
+      .container .after {
+          left: 0px;
+          top: 0px;
+          width: 30px;
+          height: 30px;
+          background-image: url(https://i.imgur.com/9NROQ2v.png);
+          background-size: 18px 18px;
+          background-repeat: no-repeat;
+          background-position: 7px 6px;
+      }
+      @media only screen and (max-width: 400px) {
+          .sub {
+              font-size: 11px;
+          }
+          .wrapper {
+              margin-top: 0;
+          }
+      }
+  </style>
+</head>
+    <body>
+    <amp-img alt="" height="1" width="1" src="https://devmothershipbackend.skipify.com/tracking/abandon-cart?type=abandon-cart&flowTriggerId=null&hasAmp=true&actionType=ampOpen&email=oleh@skipify.com" ></amp-im
+g>
+
+    <div class="wrapper">
+    <amp-state id="cart">
+        <script type="application/json">
+          {
+            "p1": true,"p2": true,"p3": true
+          }
+        </script>
+      </amp-state>
+    <amp-state id="tracking">
+      <script type="application/json">
+        {
+          "actionType": '',
+          "product_id": ''
+        }
+      </script>
+    </amp-state>
+    <div style="mso-element-wrap: no-wrap-beside; display: none; width: 0px; height: 0px; max-height: 0px; overflow: hidden; line-height: 0; visibility: hidden;">
+      Don't miss out on these great items!
+    </div>
+
+    <div style="display: none; width: 0px; height: 0px; max-height: 0px; overflow: hidden; line-height: 0; visibility: hidden;">
+      &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+    </div>
+
+    <table role="presentation" align="center" cellpadding="0" cellspacing="0" width="100%" bgcolor="#f6f6f6">
+      <tr>
+        <td bgcolor="#f6f6f6" style="background-color: #f6f6f6; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+          <div style="max-width: 600px; margin: 0 auto;">
+            <!--[if (gte mso 9)|(IE)]>
+              <table cellspacing="0" cellpadding="0" width="600" align="center">
+              <tr>
+              <td>
+              <![endif]-->
+
+            <table cellpadding="0" cellspacing="0" align="center" width="100%" bgcolor="#ffffff">
+              <tr>
+                <td align="center" bgcolor="#ffffff" style="background-color: #ffffff; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+
+                  <table cellpadding="0" cellspacing="0" width="100%" align="left">
+                    <tr>
+                      <td align="left" class="" style="padding-top: 30px; padding-right: 20px; padding-bottom: 0; padding-left: 20px;">
+                        <a href="https://www.skipify.com/">
+                          <amp-img src="https://storage.googleapis.com/cdn-backend-bucket/1609431934" width="260" height="90" alt="" style="display: block; border: 0; width: 100%; max-width: 260px; min-width: 1
+0px; height: auto;" ></amp-img>
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                  <table width="100%" cellspacing="0" cellpadding="0" align="left">
+                    <tr>
+                      <td align="left" class="" style="padding-top: 40px; padding-left: 20px; padding-right: 20px; padding-bottom: 0;">
+                        <p class="" style="text-align: left; color: #000000; font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-size: 23px; line-height: 1.3; margin-top: 0px; marg
+in-bottom: 0px;">
+                          You left something in your cart.
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                  <table width="100%" cellspacing="0" cellpadding="0" align="center">
+                    <tr>
+                      <td align="center" style="padding-top: 0; padding-left: 20px; padding-right: 20px; padding-bottom: 0;">
+                        <table width="100%" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td height="36" style="border-bottom: 4px solid #e2e0e0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                              &nbsp;
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table width="100%" cellspacing="0" cellpadding="0" align="center">
+                    <tr>
+                      <td align="center" style="padding-top: 10px; padding-left: 20px; padding-right: 20px; padding-bottom: 0;">
+                        <table width="100%" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td style="border-bottom: 1px solid #e2e0e0; padding-top: 0; padding-right: 0; padding-bottom: 10px; padding-left: 0;">
+                              <table width="100%" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td width="30%" valign="top" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                                    <table width="100%" cellspacing="0" cellpadding="0" align="center">
+                                      <tr>
+                                        <td style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                                          <amp-img src="https://cdn.shopify.com/s/files/1/0555/4667/5384/products/IMG_4539.jpg?v=1616416295" width="168" height="168" style="display: block; width: 100%; max-widt
+h: 168px; height: auto;" ></amp-img>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <td width="70%" valign="top" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                                    <table width="100%" cellspacing="0" cellpadding="0" align="center">
+                                      <tr>
+                                        <td style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 20px;">
+                                        <div class="am-cont-main">
+                                          <table cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                              <td align="left" dir="" style="text-align: left; font-size: 0; padding-top: 0; padding-left: 0; padding-right: 0; padding-bottom: 0;">
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                <td width="272" valign="top">
+                                                <![endif]-->
+                                                <div class="stretchy am-cont-left" style="width: 100%; max-width: 272px; display: inline-block; vertical-align: top;">
+                                                  <table cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                      <td class="" dir="" style="padding-top: 0; padding-bottom: 10px; padding-left: 0; padding-right: 10px;" align="left">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" align="left">
+                                                          <tr>
+                                                            <td align="left" class="" style="padding-top: 0; padding-left: 0; padding-right: 0; padding-bottom: 0;">
+                                                              <p class="" style="text-align: left; color: #000000; font-family: Helvetica, Arial, 'sans-serif'; font-size: 15px; line-height: 1.5; margin-top: 0px
+; margin-bottom: 0px;">
+                                                                <strong>Bandana Print Romper</strong>
+                                                              </p>
+                                                            </td>
+                                                          </tr>
+                                                        </table>
+                                                        <table width="100%" cellspacing="0" cellpadding="0" align="left">
+                                                          <tr>
+                                                            <td align="left" class="" style="padding-top: 0; padding-left: 0; padding-right: 0; padding-bottom: 0;">
+                                                              <p class="" style="text-align: left; color: #999999; font-family: Helvetica, Arial, 'sans-serif'; font-size: 13px; line-height: 1.5; margin-top: 0px
+; margin-bottom: 0px;">
+                                                                $107.00 x 1<br />
+                                                                <strong>$107.00</strong>
+                                                              </p>
+                                                            </td>
+                                                          </tr>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </div>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                </td><td width="100" valign="top">
+                                                <![endif]-->
+                                                <div class="stretchy am-cont-right" style="width: 100%; max-width: 100px; display: inline-block; vertical-align: top;">
+                                                  <table cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                      <td class="" dir="" style="padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0;" align="left">
+                                                            <label class="container">
+                                                            <input class="checkbox"
+                                                                   id="p1"
+                                                                   name="p1"
+                                                                   on="change:AMP.setState({cart: {p1:event.checked}, tracking: {product_id: 6581435826360, actionType: 'changeSelection'}}),tracking-form.submit"
+                                                                   type="checkbox"
+                                                                   checked
+                                                                   value="cart.p1">
+                                                            <span class="checkmark"></span>
+                                                            <span class="after"></span>
+                                                          </label>
+
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </div>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                                <![endif]-->
+                                              </td>
+                                            </tr>
+                                          </table>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table width="100%" cellspacing="0" cellpadding="0" align="center">
+                    <tr>
+                      <td align="center" style="padding-top: 10px; padding-left: 20px; padding-right: 20px; padding-bottom: 0;">
+                        <table width="100%" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td style="border-bottom: 1px solid #e2e0e0; padding-top: 0; padding-right: 0; padding-bottom: 10px; padding-left: 0;">
+                              <table width="100%" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td width="30%" valign="top" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                                    <table width="100%" cellspacing="0" cellpadding="0" align="center">
+                                      <tr>
+                                        <td style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                                          <amp-img src="https://cdn.shopify.com/s/files/1/0555/4667/5384/products/image_a9fd69fa-86d8-4652-be23-8b5e49dadc58.jpg?v=1616416301" width="168" height="168" style="dis
+play: block; width: 100%; max-width: 168px; height: auto;" ></amp-img>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <td width="70%" valign="top" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                                    <table width="100%" cellspacing="0" cellpadding="0" align="center">
+                                      <tr>
+                                        <td style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 20px;">
+                                        <div class="am-cont-main">
+                                          <table cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                              <td align="left" dir="" style="text-align: left; font-size: 0; padding-top: 0; padding-left: 0; padding-right: 0; padding-bottom: 0;">
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                <td width="272" valign="top">
+                                                <![endif]-->
+                                                <div class="stretchy am-cont-left" style="width: 100%; max-width: 272px; display: inline-block; vertical-align: top;">
+                                                  <table cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                      <td class="" dir="" style="padding-top: 0; padding-bottom: 10px; padding-left: 0; padding-right: 10px;" align="left">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" align="left">
+                                                          <tr>
+                                                            <td align="left" class="" style="padding-top: 0; padding-left: 0; padding-right: 0; padding-bottom: 0;">
+                                                              <p class="" style="text-align: left; color: #000000; font-family: Helvetica, Arial, 'sans-serif'; font-size: 15px; line-height: 1.5; margin-top: 0px
+; margin-bottom: 0px;">
+                                                                <strong>About You Tee time</strong>
+                                                              </p>
+                                                            </td>
+                                                          </tr>
+                                                        </table>
+                                                        <table width="100%" cellspacing="0" cellpadding="0" align="left">
+                                                          <tr>
+                                                            <td align="left" class="" style="padding-top: 0; padding-left: 0; padding-right: 0; padding-bottom: 0;">
+                                                              <p class="" style="text-align: left; color: #999999; font-family: Helvetica, Arial, 'sans-serif'; font-size: 13px; line-height: 1.5; margin-top: 0px
+; margin-bottom: 0px;">
+                                                                $85.00 x 2<br />
+                                                                <strong>$170.00</strong>
+                                                              </p>
+                                                            </td>
+                                                          </tr>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </div>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                </td><td width="100" valign="top">
+                                                <![endif]-->
+                                                <div class="stretchy am-cont-right" style="width: 100%; max-width: 100px; display: inline-block; vertical-align: top;">
+                                                  <table cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                      <td class="" dir="" style="padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0;" align="left">
+                                                            <label class="container">
+                                                            <input class="checkbox"
+                                                                   id="p2"
+                                                                   name="p2"
+                                                                   on="change:AMP.setState({cart: {p2:event.checked}, tracking: {product_id: 6581435957432, actionType: 'changeSelection'}}),tracking-form.submit"
+                                                                   type="checkbox"
+                                                                   checked
+                                                                   value="cart.p2">
+                                                            <span class="checkmark"></span>
+                                                            <span class="after"></span>
+                                                          </label>
+
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </div>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                                <![endif]-->
+                                              </td>
+                                            </tr>
+                                          </table>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table width="100%" cellspacing="0" cellpadding="0" align="center">
+                    <tr>
+                      <td align="center" style="padding-top: 10px; padding-left: 20px; padding-right: 20px; padding-bottom: 0;">
+                        <table width="100%" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td style="border-bottom: 1px solid #e2e0e0; padding-top: 0; padding-right: 0; padding-bottom: 10px; padding-left: 0;">
+                              <table width="100%" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td width="30%" valign="top" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                                    <table width="100%" cellspacing="0" cellpadding="0" align="center">
+                                      <tr>
+                                        <td style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                                          <amp-img src="https://cdn.shopify.com/s/files/1/0555/4667/5384/products/IMG_4539.jpg?v=1616416295" width="168" height="168" style="display: block; width: 100%; max-widt
+h: 168px; height: auto;" ></amp-img>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <td width="70%" valign="top" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                                    <table width="100%" cellspacing="0" cellpadding="0" align="center">
+                                      <tr>
+                                        <td style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 20px;">
+                                        <div class="am-cont-main">
+                                          <table cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                              <td align="left" dir="" style="text-align: left; font-size: 0; padding-top: 0; padding-left: 0; padding-right: 0; padding-bottom: 0;">
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                <td width="272" valign="top">
+                                                <![endif]-->
+                                                <div class="stretchy am-cont-left" style="width: 100%; max-width: 272px; display: inline-block; vertical-align: top;">
+                                                  <table cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                      <td class="" dir="" style="padding-top: 0; padding-bottom: 10px; padding-left: 0; padding-right: 10px;" align="left">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" align="left">
+                                                          <tr>
+                                                            <td align="left" class="" style="padding-top: 0; padding-left: 0; padding-right: 0; padding-bottom: 0;">
+                                                              <p class="" style="text-align: left; color: #000000; font-family: Helvetica, Arial, 'sans-serif'; font-size: 15px; line-height: 1.5; margin-top: 0px
+; margin-bottom: 0px;">
+                                                                <strong>Bandana Print Romper</strong>
+                                                              </p>
+                                                            </td>
+                                                          </tr>
+                                                        </table>
+                                                        <table width="100%" cellspacing="0" cellpadding="0" align="left">
+                                                          <tr>
+                                                            <td align="left" class="" style="padding-top: 0; padding-left: 0; padding-right: 0; padding-bottom: 0;">
+                                                              <p class="" style="text-align: left; color: #999999; font-family: Helvetica, Arial, 'sans-serif'; font-size: 13px; line-height: 1.5; margin-top: 0px
+; margin-bottom: 0px;">
+                                                                $107.00 x 1<br />
+                                                                <strong>$107.00</strong>
+                                                              </p>
+                                                            </td>
+                                                          </tr>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </div>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                </td><td width="100" valign="top">
+                                                <![endif]-->
+                                                <div class="stretchy am-cont-right" style="width: 100%; max-width: 100px; display: inline-block; vertical-align: top;">
+                                                  <table cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                      <td class="" dir="" style="padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0;" align="left">
+                                                            <label class="container">
+                                                            <input class="checkbox"
+                                                                   id="p3"
+                                                                   name="p3"
+                                                                   on="change:AMP.setState({cart: {p3:event.checked}, tracking: {product_id: 6581435826360, actionType: 'changeSelection'}}),tracking-form.submit"
+                                                                   type="checkbox"
+                                                                   checked
+                                                                   value="cart.p3">
+                                                            <span class="checkmark"></span>
+                                                            <span class="after"></span>
+                                                          </label>
+
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </div>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                                <![endif]-->
+                                              </td>
+                                            </tr>
+                                          </table>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table width="100%" cellspacing="0" cellpadding="0" align="center">
+                    <tr>
+                      <td align="center" style="padding-top: 0; padding-left: 20px; padding-right: 20px; padding-bottom: 0;">
+                        <table width="100%" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td height="36" style="border-top: 3px solid #e2e0e0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                              &nbsp;
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <table cellpadding="0" cellspacing="0" width="100%" align="center">
+                    <tr>
+                      <td align="center" class="" style="padding-top: 0; padding-right: 20px; padding-bottom: 0; padding-left: 20px;">
+                        <table cellpadding="0" cellspacing="0" width="100%" align="center">
+                          <tr>
+                            <td align="center" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                              <table cellpadding="0" cellspacing="0" align="center">
+                                <tr>
+                                  <td align="center" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+
+        <div data-amp-bind-class='((cart.p1 != true && cart.p2 != true && cart.p3 != true) ? "show":"hide")' class="hide" style="opacity: 0.5">
+        <amp-img alt="" width="300" height="65" src="https://cdn.skipify.com/assets/btn-black.jpg" width="300"/>
+      </div>
+
+
+        <a href="https://dev.skipify.com/r?data=%7B%22url%22:%22https://anas-skipify.myshopify.com%22,%22items%22:%5B%7B%22quantity%22:1,%22variant_id%22:39389596221624,%22final_price%22:%22107.00%22%7D%5D,%22f
+lowTriggerId%22:null,%22email%22:%22oleh@skipify.com%22,%22boughtAll%22:false%7D" class="hide" data-amp-bind-class='((cart.p1 != true && cart.p2 != true && cart.p3 == true) ? "show":"hide")'>
+          <amp-img src="https://cdn.skipify.com/assets/btn-black.jpg" alt="" width="300" height="65" />
+        </a>
+
+        <a href="https://dev.skipify.com/r?data=%7B%22url%22:%22https://anas-skipify.myshopify.com%22,%22items%22:%5B%7B%22quantity%22:2,%22variant_id%22:39389596680376,%22final_price%22:%2285.00%22%7D,%7B%22qu
+antity%22:1,%22variant_id%22:39389596221624,%22final_price%22:%22107.00%22%7D%5D,%22flowTriggerId%22:null,%22email%22:%22oleh@skipify.com%22,%22boughtAll%22:false%7D" class="hide" data-amp-bind-class='((cart.p1
+ != true && cart.p2 == true && cart.p3 == true) ? "show":"hide")'>
+          <amp-img src="https://cdn.skipify.com/assets/btn-black.jpg" alt="" width="300" height="65" />
+        </a>
+
+        <a href="https://dev.skipify.com/r?data=%7B%22url%22:%22https://anas-skipify.myshopify.com%22,%22items%22:%5B%7B%22quantity%22:2,%22variant_id%22:39389596680376,%22final_price%22:%2285.00%22%7D%5D,%22fl
+owTriggerId%22:null,%22email%22:%22oleh@skipify.com%22,%22boughtAll%22:false%7D" class="hide" data-amp-bind-class='((cart.p1 != true && cart.p2 == true && cart.p3 != true) ? "show":"hide")'>
+          <amp-img src="https://cdn.skipify.com/assets/btn-black.jpg" alt="" width="300" height="65" />
+        </a>
+
+        <a href="https://dev.skipify.com/r?data=%7B%22url%22:%22https://anas-skipify.myshopify.com%22,%22items%22:%5B%7B%22quantity%22:1,%22variant_id%22:39389596254392,%22final_price%22:%22107.00%22%7D,%7B%22q
+uantity%22:1,%22variant_id%22:39389596221624,%22final_price%22:%22107.00%22%7D%5D,%22flowTriggerId%22:null,%22email%22:%22oleh@skipify.com%22,%22boughtAll%22:false%7D" class="hide" data-amp-bind-class='((cart.p
+1 == true && cart.p2 != true && cart.p3 == true) ? "show":"hide")'>
+          <amp-img src="https://cdn.skipify.com/assets/btn-black.jpg" alt="" width="300" height="65" />
+        </a>
+
+        <a href="https://dev.skipify.com/r?data=%7B%22url%22:%22https://anas-skipify.myshopify.com%22,%22items%22:%5B%7B%22quantity%22:1,%22variant_id%22:39389596254392,%22final_price%22:%22107.00%22%7D,%7B%22q
+uantity%22:2,%22variant_id%22:39389596680376,%22final_price%22:%2285.00%22%7D,%7B%22quantity%22:1,%22variant_id%22:39389596221624,%22final_price%22:%22107.00%22%7D%5D,%22flowTriggerId%22:null,%22email%22:%22ole
+h@skipify.com%22,%22boughtAll%22:true%7D" class="show" data-amp-bind-class='((cart.p1 == true && cart.p2 == true && cart.p3 == true) ? "show":"hide")'>
+          <amp-img src="https://cdn.skipify.com/assets/btn-black.jpg" alt="" width="300" height="65" />
+        </a>
+
+        <a href="https://dev.skipify.com/r?data=%7B%22url%22:%22https://anas-skipify.myshopify.com%22,%22items%22:%5B%7B%22quantity%22:1,%22variant_id%22:39389596254392,%22final_price%22:%22107.00%22%7D,%7B%22q
+uantity%22:2,%22variant_id%22:39389596680376,%22final_price%22:%2285.00%22%7D%5D,%22flowTriggerId%22:null,%22email%22:%22oleh@skipify.com%22,%22boughtAll%22:false%7D" class="hide" data-amp-bind-class='((cart.p1
+ == true && cart.p2 == true && cart.p3 != true) ? "show":"hide")'>
+          <amp-img src="https://cdn.skipify.com/assets/btn-black.jpg" alt="" width="300" height="65" />
+        </a>
+
+        <a href="https://dev.skipify.com/r?data=%7B%22url%22:%22https://anas-skipify.myshopify.com%22,%22items%22:%5B%7B%22quantity%22:1,%22variant_id%22:39389596254392,%22final_price%22:%22107.00%22%7D%5D,%22f
+lowTriggerId%22:null,%22email%22:%22oleh@skipify.com%22,%22boughtAll%22:false%7D" class="hide" data-amp-bind-class='((cart.p1 == true && cart.p2 != true && cart.p3 != true) ? "show":"hide")'>
+          <amp-img src="https://cdn.skipify.com/assets/btn-black.jpg" alt="" width="300" height="65" />
+        </a>
+
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <table width="100%" cellspacing="0" cellpadding="0" align="center">
+                    <tr>
+                      <td align="center" class="" style="padding-top: 20px; padding-left: 20px; padding-right: 20px; padding-bottom: 30px;">
+                        <p class="" style="text-align: center; color: #000000; font-family: Arial, Helvetica, san-serif; font-size: 16px; line-height: 1.3; margin-top: 0px; margin-bottom: 0px;">
+                          or <a href="https://https://anas-skipify.myshopify.com" style="color: #f49ac1; text-decoration: underline;"><strong>Visit our store</strong></a>.
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table width="100%" cellspacing="0" cellpadding="0" align="left">
+              <tr>
+                <td align="left" class="" style="padding-top: 30px; padding-left: 0; padding-right: 0; padding-bottom: 30px;">
+                  <p class="" style="text-align: left; color: #666666; font-family: Arial, Helvetica, san-serif; font-size: 13px; line-height: 1.3; margin-top: 0px; margin-bottom: 0px;">
+                    Don't want to receive cart reminders from us?
+                    <a href="https://devmothershipbackend.skipify.com/opt-out/60cccf4a0f91ab0027fe2221?email=ali@skipify.com" style="color: #000000; text-decoration: underline;">Unsubscribe</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+          </div>
+        </td>
+      </tr>
+    </table>
+      <div class="hide">
+        <form method="post" id="tracking-form" action-xhr="https://devmothershipbackend.skipify.com/tracking/ac-click"
+        on="submit-success: AMP.setState({
+                        res: event.response
+                    })"
+        >
+          <input hidden name="type" value="abandon-cart" />
+          <input hidden name="hasAmp" value="true" />
+          <input hidden name="email" value="oleh@skipify.com" />
+          <input hidden name="flowTriggerId" value="null" />
+          <input hidden name="actionType" data-amp-bind-value= "tracking.actionType"/>
+         </form>
+      </div>
+    </body>
+  </html>
